@@ -508,8 +508,8 @@ const quizData = [
             },
             {
                 "question": "In HTML, the correct way of commenting out something would be using _________.",
-                "options": ["## and ##", " <!-- and --»", "/- and -/", "<!-- and --!>"],
-                "answer": " <!-- and --»"
+                "options": ["## and ##", " <!-- and -->", "/- and -/", "<!-- and --!>"],
+                "answer": " <!-- and -->"
             },
             {
                 "question": "How does the <bdo> element work?",
