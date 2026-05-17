@@ -331,10 +331,10 @@ const quizData = [
                 "options": [
                     "<-- This is a comment --> ",
                     "<## This is a comment ##>",
-                    "// This is a comment",
-                    "<** This is a comment **>"
+                    "<--> This is a comment </-->",
+                    "<!-- This is a comment -->"
                 ],
-                "answer": "<-- This is a comment --> "
+                "answer": "<!-- This is a comment -->"
             },
             {
                 "question": "Do you remember any legal HTML color names? Which one of the following is a legal HTML color?",
