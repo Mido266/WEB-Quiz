@@ -329,12 +329,12 @@ const quizData = [
             {
                 "question": "What is the correct syntax for adding a comment in HTML?",
                 "options": [
-                    "<!-- This is a comment -->",
+                    "",
                     "<## This is a comment ##>",
                     "// This is a comment",
-                    "<-- This is a comment -->"
+                    "<** This is a comment **>"
                 ],
-                "answer": "<!-- This is a comment -->"
+                "answer": ""
             },
             {
                 "question": "Do you remember any legal HTML color names? Which one of the following is a legal HTML color?",
@@ -508,7 +508,7 @@ const quizData = [
             },
             {
                 "question": "In HTML, the correct way of commenting out something would be using _________.",
-                "options": ["## and ##", " <!-- and -->", "</- and -/>", "<!-- and --!>"],
+                "options": ["## and ##", "", "// and //", "dl-- and --dl"],
                 "answer": ""
             },
             {
@@ -559,279 +559,279 @@ const quizData = [
         ]
     },
     {
-        "title": "CSS",
-        "questions": [
-            {
-                "question": "What does the animation-name property do?",
-                "options": [
-                    "Sets how many times the animation repeats",
-                    "Specifies the keyframe animation to use",
-                    "Sets animation speed",
-                    "Controls the direction of animation"
-                ],
-                "answer": "Specifies the keyframe animation to use"
-            },
-            {
-                "question": "Which property defines how long an animation will take to complete one cycle?",
-                "options": [
-                    "animation-delay",
-                    "animation-duration",
-                    "animation-play-state",
-                    "animation-direction"
-                ],
-                "answer": "animation-duration"
-            },
-            {
-                "question": "What does the value infinite mean in animation-iteration-count?",
-                "options": [
-                    "Animation runs once",
-                    "Animation runs twice",
-                    "Animation never starts",
-                    "Animation repeats endlessly"
-                ],
-                "answer": "Animation repeats endlessly"
-            },
-            {
-                "question": "Which animation-timing-function keeps the same speed throughout the animation?",
-                "options": ["ease", "ease-in-out", "linear", "ease-in"],
-                "answer": "linear"
-            },
-            {
-                "question": "What does animation-delay do?",
-                "options": [
-                    "Repeats animation once per second",
-                    "Makes animation end early",
-                    "Waits before starting the animation",
-                    "Slows animation down"
-                ],
-                "answer": "Waits before starting the animation"
-            },
-            {
-                "question": "Which property controls whether the animation runs forward, backward, or alternates?",
-                "options": [
-                    "animation-play-state",
-                    "animation-fill-mode",
-                    "animation-direction",
-                    "animation-name"
-                ],
-                "answer": "animation-direction"
-            },
-            {
-                "question": "The value forwards in animation-fill-mode means:",
-                "options": [
-                    "No styles apply before or after animation",
-                    "Animation returns to its starting styles",
-                    "Final keyframe styles remain after animation ends",
-                    "Only the first keyframe styles apply"
-                ],
-                "answer": "Final keyframe styles remain after animation ends"
-            },
-            {
-                "question": "What is the purpose of @keyframes?",
-                "options": [
-                    "To pause animations",
-                    "To define animation states at different percentages",
-                    "To control animation priority",
-                    "To specify animation direction"
-                ],
-                "answer": "To define animation states at different percentages"
-            },
-            {
-                "question": "The shorthand animation property can include:",
-                "options": [
-                    "animation-name, animation-duration",
-                    "animation-timing-function",
-                    "animation-delay, iteration-count, direction",
-                    "All of the above"
-                ],
-                "answer": "All of the above"
-            },
-            {
-                "question": "Which property pauses or resumes an animation?",
-                "options": [
-                    "animation-direction",
-                    "animation-name",
-                    "animation-play-state",
-                    "animation-duration"
-                ],
-                "answer": "animation-play-state"
-            },
-            {
-                "question": "animation-duration must be written in seconds only.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "The animation-name property must match a name defined in @keyframes.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "The default value for animation-iteration-count is 1.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "animation-delay makes the animation run slower.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "The value alternate makes the animation run forward, then backward.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "The linear timing function moves the animation at a constant speed.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "animation-fill-mode:none means the element keeps its animated final state.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "An animation with animation-play-state paused will not run.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "Keyframes allow defining property changes at multiple stages like 0%, 50%, 100%.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "The shorthand animation property cannot set delay and iteration count together.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "Which property is used to set the background color of an element?",
-                "options": ["color", "background-color", "background-style", "background-image"],
-                "answer": "background-color"
-            },
-            {
-                "question": "Which property is used to set a background image?",
-                "options": ["background-src", "image-background", "background-file", "background-image"],
-                "answer": "background-image"
-            },
-            {
-                "question": "What does background-repeat do?",
-                "options": [
-                    "It controls if and how the background image repeats",
-                    "It stretches the image",
-                    "It hides the image",
-                    "It crops the image"
-                ],
-                "answer": "It controls if and how the background image repeats"
-            },
-            {
-                "question": "Which values positions the background image in the center of an element?",
-                "options": ["left", "top", "bottom", "center"],
-                "answer": "center"
-            },
-            {
-                "question": "Which background-size value makes the image cover the entire element without distorting proportions?",
-                "options": ["full", "cover", "contain", "auto"],
-                "answer": "cover"
-            },
-            {
-                "question": "The value contain in background-size means:",
-                "options": [
-                    "Image fills the entire element but may distort",
-                    "Image repeats horizontally",
-                    "Image fits inside the element while maintaining proportions",
-                    "Image stays fixed while scrolling"
-                ],
-                "answer": "Image fits inside the element while maintaining proportions"
-            },
-            {
-                "question": "Which property determines whether the background image scrolls with the page or stays fixed?",
-                "options": [
-                    "background-position",
-                    "background-size",
-                    "background-repeat",
-                    "background-attachment"
-                ],
-                "answer": "background-attachment"
-            },
-            {
-                "question": "What does background-attachment: fixed; do?",
-                "options": [
-                    "Background moves with the element",
-                    "Background stays in place when the page scrolls",
-                    "Background disappears on scroll",
-                    "Background repeats constantly"
-                ],
-                "answer": "Background stays in place when the page scrolls"
-            },
-            {
-                "question": "Which value for background-repeat repeats the image ONLY along the horizontal axis?",
-                "options": ["repeat", "no-repeat", "repeat-x", "repeat-y"],
-                "answer": "repeat-x"
-            },
-            {
-                "question": "Which values can be used for background-position?",
-                "options": [
-                    "top, bottom, left, right, center",
-                    "full, half, mid",
-                    "x, y, z",
-                    "auto, fit, fill"
-                ],
-                "answer": "top, bottom, left, right, center"
-            },
-            {
-                "question": "The background property can only be applied to div elements.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "HEX and RGB values can be used with background-color.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "background-image requires a URL path to load the image.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "The background-repeat property controls whether an image is stretched or cropped.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "background-position can use pixel or percentage values.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "background-size:cover may crop part of the image to fill the element.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "background-attachment: scroll keeps the background fixed during scrolling.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "background-repeat: repeat-y repeats the image vertically only.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "The value contain may leave empty space around the image.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "A background image cannot be used together with background color.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
+            "title": "CSS",
+            "questions": [
+                {
+                    "question": "What does the animation-name property do?",
+                    "options": [
+                        "Sets how many times the animation repeats",
+                        "Specifies the keyframe animation to use",
+                        "Sets animation speed",
+                        "Controls the direction of animation"
+                    ],
+                    "answer": "Specifies the keyframe animation to use"
+                },
+                {
+                    "question": "Which property defines how long an animation will take to complete one cycle?",
+                    "options": [
+                        "animation-delay",
+                        "animation-duration",
+                        "animation-play-state",
+                        "animation-direction"
+                    ],
+                    "answer": "animation-duration"
+                },
+                {
+                    "question": "What does the value infinite mean in animation-iteration-count?",
+                    "options": [
+                        "Animation runs once",
+                        "Animation runs twice",
+                        "Animation never starts",
+                        "Animation repeats endlessly"
+                    ],
+                    "answer": "Animation repeats endlessly"
+                },
+                {
+                    "question": "Which animation-timing-function keeps the same speed throughout the animation?",
+                    "options": ["ease", "ease-in-out", "linear", "ease-in"],
+                    "answer": "linear"
+                },
+                {
+                    "question": "What does animation-delay do?",
+                    "options": [
+                        "Repeats animation once per second",
+                        "Makes animation end early",
+                        "Waits before starting the animation",
+                        "Slows animation down"
+                    ],
+                    "answer": "Waits before starting the animation"
+                },
+                {
+                    "question": "Which property controls whether the animation runs forward, backward, or alternates?",
+                    "options": [
+                        "animation-play-state",
+                        "animation-fill-mode",
+                        "animation-direction",
+                        "animation-name"
+                    ],
+                    "answer": "animation-direction"
+                },
+                {
+                    "question": "The value forwards in animation-fill-mode means:",
+                    "options": [
+                        "No styles apply before or after animation",
+                        "Animation returns to its starting styles",
+                        "Final keyframe styles remain after animation ends",
+                        "Only the first keyframe styles apply"
+                    ],
+                    "answer": "Final keyframe styles remain after animation ends"
+                },
+                {
+                    "question": "What is the purpose of @keyframes?",
+                    "options": [
+                        "To pause animations",
+                        "To define animation states at different percentages",
+                        "To control animation priority",
+                        "To specify animation direction"
+                    ],
+                    "answer": "To define animation states at different percentages"
+                },
+                {
+                    "question": "The shorthand animation property can include:",
+                    "options": [
+                        "animation-name, animation-duration",
+                        "animation-timing-function",
+                        "animation-delay, iteration-count, direction",
+                        "All of the above"
+                    ],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "Which property pauses or resumes an animation?",
+                    "options": [
+                        "animation-direction",
+                        "animation-name",
+                        "animation-play-state",
+                        "animation-duration"
+                    ],
+                    "answer": "animation-play-state"
+                },
+                {
+                    "question": "animation-duration must be written in seconds only.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "The animation-name property must match a name defined in @keyframes.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "The default value for animation-iteration-count is 1.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "animation-delay makes the animation run slower.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "The value alternate makes the animation run forward, then backward.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "The linear timing function moves the animation at a constant speed.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "animation-fill-mode:none means the element keeps its animated final state.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "An animation with animation-play-state paused will not run.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "Keyframes allow defining property changes at multiple stages like 0%, 50%, 100%.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "The shorthand animation property cannot set delay and iteration count together.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "Which property is used to set the background color of an element?",
+                    "options": ["color", "background-color", "background-style", "background-image"],
+                    "answer": "background-color"
+                },
+                {
+                    "question": "Which property is used to set a background image?",
+                    "options": ["background-src", "image-background", "background-file", "background-image"],
+                    "answer": "background-image"
+                },
+                {
+                    "question": "What does background-repeat do?",
+                    "options": [
+                        "It repeats the background only horizontally",
+                        "It repeats the background only vertically",
+                        "It prevents the background image from repeating",
+                        "It stretches the background image"
+                    ],
+                    "answer": "It prevents the background image from repeating"
+                },
+                {
+                    "question": "Which values positions the background image in the center of an element?",
+                    "options": ["left", "top", "bottom", "center"],
+                    "answer": "center"
+                },
+                {
+                    "question": "Which background-size value makes the image cover the entire element without distorting proportions?",
+                    "options": ["full", "cover", "contain", "auto"],
+                    "answer": "cover"
+                },
+                {
+                    "question": "The value contain in background-size means:",
+                    "options": [
+                        "Image fills the entire element but may distort",
+                        "Image repeats horizontally",
+                        "Image fits inside the element while maintaining proportions",
+                        "Image stays fixed while scrolling"
+                    ],
+                    "answer": "Image fits inside the element while maintaining proportions"
+                },
+                {
+                    "question": "Which property determines whether the background image scrolls with the page or stays fixed?",
+                    "options": [
+                        "background-position",
+                        "background-size",
+                        "background-repeat",
+                        "background-attachment"
+                    ],
+                    "answer": "background-attachment"
+                },
+                {
+                    "question": "What does background-attachment: fixed; do?",
+                    "options": [
+                        "Background moves with the element",
+                        "Background stays in place when the page scrolls",
+                        "Background disappears on scroll",
+                        "Background repeats constantly"
+                    ],
+                    "answer": "Background stays in place when the page scrolls"
+                },
+                {
+                    "question": "Which value for background-repeat repeats the image ONLY along the horizontal axis?",
+                    "options": ["repeat", "no-repeat", "repeat-x", "repeat-y"],
+                    "answer": "repeat-x"
+                },
+                {
+                    "question": "Which values can be used for background-position?",
+                    "options": [
+                        "top, bottom, left, right, center",
+                        "full, half, mid",
+                        "x, y, z",
+                        "auto, fit, fill"
+                    ],
+                    "answer": "top, bottom, left, right, center"
+                },
+                {
+                    "question": "The background property can only be applied to div elements.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "HEX and RGB values can be used with background-color.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "background-image requires a URL path to load the image.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "The background-repeat property controls whether an image is stretched or cropped.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "background-position can use pixel or percentage values.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "background-size:cover may crop part of the image to fill the element.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "background-attachment: scroll keeps the background fixed during scrolling.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "background-repeat: repeat-y repeats the image vertically only.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "The value contain may leave empty space around the image.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "A background image cannot be used together with background color.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
                     "question": "What does the border-radius property do in CSS?",
                     "options": [
                         "Changes the border thickness",
@@ -2519,10 +2519,10 @@ const quizData = [
                 {
                     "question": "Which measurement unit is commonly used for responsive height/width?",
                     "options": [
+                        "percentages",
                         "pixels",
                         "inches",
-                        "centimeters",
-                        "percentages"
+                        "centimeters"
                     ],
                     "answer": "percentages"
                 },
@@ -2857,7 +2857,7 @@ const quizData = [
                     "answer": "<link rel=\"stylesheet\" href=\"style.css\">"
                 },
                 {
-                    "question": "Which CSS method affects only one specific HTML element?",
+                    "question": "Which " + "CSS method affects only one specific HTML element?",
                     "options": [
                         "Inline CSS",
                         "Internal CSS",
@@ -3374,3053 +3374,1739 @@ const quizData = [
                     "options": ["True", "False"],
                     "answer": "True"
                 }
-
-        ]
-    },
-    {
-        "title": "JavaScript",
-        "questions": [
-            {
-                "question": "What does JavaScript primarily add to web pages?",
-                "options": ["Style", "Behavior", "Structure", "Layout"],
-                "answer": "Behavior"
-            },
-            {
-                "question": "What is the correct way to declare a JavaScript variable?",
-                "options": ["let myVar = 5", "variable myVar = 5;", "myVar: 5;", "var myVar = 5"],
-                "answer": "let myVar = 5"
-            },
-            {
-                "question": "Which operator is used for equality comparison in JavaScript?",
-                "options": ["==", "===", "=", "!="],
-                "answer": "==="
-            },
-            {
-                "question": "What is the purpose of the \"if\" statement in JavaScript?",
-                "options": [
-                    "Loop through an array",
-                    "Declare a function",
-                    "Make a decision",
-                    "Define a class"
-                ],
-                "answer": "Make a decision"
-            },
-            {
-                "question": "How do you write a comment in JavaScript?",
-                "options": [
-                    "<!-- This is a comment -->",
-                    "// This is a comment",
-                    "/* This is a comment */",
-                    "-- This is a comment"
-                ],
-                "answer": "// This is a comment"
-            },
-            {
-                "question": "Which keyword is used to declare a constant variable in JavaScript?",
-                "options": ["var", "let", "const", "final"],
-                "answer": "const"
-            },
-            {
-                "question": "What is the value of `typeof null` in JavaScript?",
-                "options": ["\"null\"", "\"undefined\"", "\"object\"", "\"number\""],
-                "answer": "\"object\""
-            },
-            {
-                "question": "How do you declare a string in JavaScript?",
-                "options": ["'myString'", "\"myString\"", "`myString`", "All of the above"],
-                "answer": "All of the above"
-            },
-            {
-                "question": "What is the result of `3 + '3'` in JavaScript?",
-                "options": ["6", "'33'", "33", "'6'"],
-                "answer": "'33'"
-            },
-            {
-                "question": "How can you check if a variable is an array in JavaScript?",
-                "options": [
-                    "Using typeof",
-                    "Using `Array.isArray()`",
-                    "Using `isType()`",
-                    "Using `instanceof`"
-                ],
-                "answer": "Using `Array.isArray()`"
-            },
-            {
-                "question": "Which keyword is used to declare a function in JavaScript?",
-                "options": ["def", "function", "func", "fn"],
-                "answer": "function"
-            },
-            {
-                "question": "What is a function that calls itself in JavaScript?",
-                "options": [
-                    "Recursive function",
-                    "Self-invoking function",
-                    "Anonymous function",
-                    "Nested function"
-                ],
-                "answer": "Recursive function"
-            },
-            {
-                "question": "What is a closure in JavaScript?",
-                "options": [
-                    "A function that takes no arguments",
-                    "A variable that is only accessible within a function",
-                    "A function that has access to variables from its outer scope",
-                    "A built-in JavaScript class"
-                ],
-                "answer": "A function that has access to variables from its outer scope"
-            },
-            {
-                "question": "How do you pass arguments to a JavaScript function?",
-                "options": [
-                    "Inside square brackets []",
-                    "Inside curly braces {}",
-                    "Inside parentheses ()",
-                    "Inside angle brackets <>"
-                ],
-                "answer": "Inside parentheses ()"
-            },
-            {
-                "question": "What is the \"return\" statement used for in a function?",
-                "options": [
-                    "To exit the function",
-                    "To declare a variable",
-                    "To output a value from the function",
-                    "To define a loop"
-                ],
-                "answer": "To output a value from the function"
-            },
-            {
-                "question": "Which loop is used for iterating over the properties of an object?",
-                "options": ["for loop", "while loop", "do...while loop", "for...in loop"],
-                "answer": "for...in loop"
-            },
-            {
-                "question": "How do you write an \"if-else\" statement in JavaScript?",
-                "options": [
-                    "if {...} else {...}",
-                    "if (...) { ... } else {...}",
-                    "if (...) {...} elseif {...}",
-                    "if (...) { ... } else if {...}"
-                ],
-                "answer": "if (...) { ... } else {...}"
-            },
-            {
-                "question": "Which operator is used for logical \"OR\" in JavaScript?",
-                "options": ["&&", "||", "!", "&"],
-                "answer": "||"
-            },
-            {
-                "question": "What will the following code output: `for (var i=0; i<5; i++) { console.log(i); }`",
-                "options": ["0, 1, 2, 3, 4", "1, 2, 3, 4, 5", "0, 1, 2, 3, 4, 5", "5, 4, 3, 2, 1, 0"],
-                "answer": "0, 1, 2, 3, 4"
-            },
-            {
-                "question": "What is the purpose of a \"switch\" statement in JavaScript?",
-                "options": [
-                    "To create a loop",
-                    "To define a function",
-                    "To make multiple comparisons based on a single value",
-                    "To handle exceptions"
-                ],
-                "answer": "To make multiple comparisons based on a single value"
-            },
-            {
-                "question": "How do you access the last element of an array in JavaScript?",
-                "options": ["arr[-1]", "arr[last]", "arr.end", "arr[arr.length - 1]"],
-                "answer": "arr[arr.length - 1]"
-            },
-            {
-                "question": "What is the syntax for creating an object in JavaScript?",
-                "options": ["{key: value}", "(key: value)", "[key, value]", "key = value"],
-                "answer": "{key: value}"
-            },
-            {
-                "question": "How do you add a key-value pair to an existing object in JavaScript?",
-                "options": [
-                    "obj.add(key, value)",
-                    "obj[key] = value",
-                    "obj.set(key, value)",
-                    "obj.insert(key, value)"
-                ],
-                "answer": "obj[key] = value"
-            },
-            {
-                "question": "What is the purpose of the \"length\" property of an array in JavaScript?",
-                "options": [
-                    "To check if the array is empty",
-                    "To get the number of elements in the array",
-                    "To access the last element of the array",
-                    "To reverse the array"
-                ],
-                "answer": "To get the number of elements in the array"
-            },
-            {
-                "question": "How do you remove an element from the end of an array in JavaScript?",
-                "options": ["pop()", "shift()", "push()", "unshift()"],
-                "answer": "pop()"
-            },
-            {
-                "question": "What is the difference between \"null\" and \"undefined\" in JavaScript?",
-                "options": [
-                    "They are the same.",
-                    "\"Null\" is an object, and \"undefined\" is a primitive value.",
-                    "\"Null\" represents the intentional absence of any object value, and \"undefined\" represents an uninitialized variable.",
-                    "\"Null\" is used for strings, and \"undefined\" is used for numbers."
-                ],
-                "answer": "\"Null\" represents the intentional absence of any object value, and \"undefined\" represents an uninitialized variable."
-            },
-            {
-                "question": "What is the purpose of the \"this\" keyword in JavaScript?",
-                "options": [
-                    "It refers to the current function.",
-                    "It refers to the global object.",
-                    "It refers to the parent object.",
-                    "It refers to the current instance of an object."
-                ],
-                "answer": "It refers to the current instance of an object."
-            },
-            {
-                "question": "What is a callback function in JavaScript?",
-                "options": [
-                    "A function that is called at the beginning of a program",
-                    "A function that returns a value",
-                    "A function that is passed as an argument to another function and is intended to be called later",
-                    "A built-in function in JavaScript"
-                ],
-                "answer": "A function that is passed as an argument to another function and is intended to be called later"
-            },
-            {
-                "question": "What is the purpose of the \"super\" keyword in JavaScript?",
-                "options": [
-                    "To call the constructor of the parent class",
-                    "To create a new instance of an object",
-                    "To stop execution of a function",
-                    "To access the parent object's properties"
-                ],
-                "answer": "To call the constructor of the parent class"
-            },
-            {
-                "question": "What is the \"constructor\" property in JavaScript?",
-                "options": [
-                    "It specifies the color of an object.",
-                    "It returns the constructor function for an object.",
-                    "It defines the prototype of an object.",
-                    "It sets the class of an object."
-                ],
-                "answer": "It returns the constructor function for an object."
-            },
-            {
-                "question": "How can you add a method to an existing JavaScript object?",
-                "options": [
-                    "By modifying its prototype",
-                    "By using the \"addMethod\" function",
-                    "By using the \"extend\" keyword",
-                    "By creating a new object"
-                ],
-                "answer": "By modifying its prototype"
-            },
-            {
-                "question": "What is the purpose of the \"let\" keyword in ES6?",
-                "options": [
-                    "To declare a variable with block scope",
-                    "To declare a constant variable",
-                    "To declare a global variable",
-                    "To declare a variable with function scope"
-                ],
-                "answer": "To declare a variable with block scope"
-            },
-            {
-                "question": "What does the Document Object Model (DOM) represent in a web page?",
-                "options": [
-                    "The page's layout",
-                    "The server's response",
-                    "The structure of the HTML elements",
-                    "The browser's history"
-                ],
-                "answer": "The structure of the HTML elements"
-            },
-            {
-                "question": "How do you select an element by its ID in the DOM using JavaScript?",
-                "options": [
-                    "getElementById('id')",
-                    "selectElement('id')",
-                    "querySelector('#id')",
-                    "getElementByTag('id')"
-                ],
-                "answer": "getElementById('id')"
-            },
-            {
-                "question": "What is the purpose of the \"innerHTML\" property in the DOM?",
-                "options": [
-                    "To get or set the text content of an HTML element",
-                    "To hide an element",
-                    "To change the element's font size",
-                    "To access the element's parent"
-                ],
-                "answer": "To get or set the text content of an HTML element"
-            },
-            {
-                "question": "What is an event listener in JavaScript?",
-                "options": [
-                    "A way to add audio to a web page",
-                    "A function that runs when an event occurs",
-                    "A type of error message",
-                    "A method to style an element"
-                ],
-                "answer": "A function that runs when an event occurs"
-            },
-            {
-                "question": "How do you prevent the default behavior of an event in JavaScript?",
-                "options": [
-                    "event.preventDefault()",
-                    "event.stopPropagation()",
-                    "event.pause()",
-                    "event.stop()"
-                ],
-                "answer": "event.preventDefault()"
-            },
-            {
-                "question": "What is the purpose of the \"try...catch\" statement in JavaScript?",
-                "options": [
-                    "To create a loop",
-                    "To handle exceptions and errors",
-                    "To define a function",
-                    "To declare a variable"
-                ],
-                "answer": "To handle exceptions and errors"
-            },
-            {
-                "question": "What is an exception in JavaScript?",
-                "options": [
-                    "A special type of variable",
-                    "An error that occurs during the execution of a program",
-                    "A reserved keyword",
-                    "A type of function"
-                ],
-                "answer": "An error that occurs during the execution of a program"
-            },
-            {
-                "question": "What is the \"finally\" block used for in a \"try...catch\" statement?",
-                "options": [
-                    "To define a function",
-                    "To run code regardless of whether an exception is thrown or not",
-                    "To execute code before the \"try\" block",
-                    "To catch all errors in the program"
-                ],
-                "answer": "To run code regardless of whether an exception is thrown or not"
-            },
-            {
-                "question": "How do you throw a custom error in JavaScript?",
-                "options": [
-                    "By using the \"error()\" function",
-                    "By calling the \"throw\" statement with an error message",
-                    "By using the \"raise\" keyword",
-                    "By declaring a variable with the name \"error\""
-                ],
-                "answer": "By calling the \"throw\" statement with an error message"
-            },
-            {
-                "question": "What is the purpose of the \"catch\" block in a \"try...catch\" statement?",
-                "options": [
-                    "To execute code after the \"try\" block",
-                    "To handle and specify what to do when an exception is thrown",
-                    "To define a function",
-                    "To catch all errors in the program"
-                ],
-                "answer": "To handle and specify what to do when an exception is thrown"
-            },
-            {
-                "question": "What is event delegation in JavaScript?",
-                "options": [
-                    "A way to delay the execution of event listeners",
-                    "A method for handling events using promises",
-                    "A technique to attach a single event listener to a common ancestor of multiple elements",
-                    "A way to stop event propagation"
-                ],
-                "answer": "A technique to attach a single event listener to a common ancestor of multiple elements"
-            },
-            {
-                "question": "What is the purpose of a \"do...while\" loop in JavaScript?",
-                "options": [
-                    "To create an infinite loop",
-                    "To iterate through the properties of an object",
-                    "To execute a block of code at least once, and then continue as long as a condition is true",
-                    "To handle exceptions"
-                ],
-                "answer": "To execute a block of code at least once, and then continue as long as a condition is true"
-            },
-            {
-                "question": "What is the difference between \"var\" and \"let\" in terms of scope?",
-                "options": [
-                    "\"var\" has block scope, and \"let\" has function scope.",
-                    "\"var\" has function scope, and \"let\" has block scope.",
-                    "\"var\" is used for declarations, and \"let\" is used for assignments.",
-                    "\"var\" is a reserved keyword, and \"let\" is a data type."
-                ],
-                "answer": "\"var\" has function scope, and \"let\" has block scope."
-            },
-            {
-                "question": "In JavaScript, what is the data type of the following variable? let x = 7.5",
-                "options": ["Decimal", "Number", "Integer", "Float"],
-                "answer": "Number"
-            },
-            {
-                "question": "What keyword is used to define a function in JavaScript?",
-                "options": ["def", "func", "function"],
-                "answer": "function"
-            },
-            {
-                "question": "If a variable is declared using the let keyword, it can never change its data type.",
-                "options": ["True", "False"],
-                "answer": "False"
-            },
-            {
-                "question": "alert(8); is the same as window.alert(8);.",
-                "options": ["True", "False"],
-                "answer": "True"
-            },
-            {
-                "question": "What are the data types of 10, 'Sally', and true respectively in JS?",
-                "options": [
-                    "Number, String, Boolean",
-                    "Integer, Text, Boolean",
-                    "Float, String, Bit",
-                    "Number, Character, Boolean"
-                ],
-                "answer": "Number, String, Boolean"
-            },
-            {
-                "question": "What is NOT a correct syntax for writing output in JavaScript?",
-                "options": [
-                    "window.alert()",
-                    "console.log()",
-                    "body.html()",
-                    "document.write()"
-                ],
-                "answer": "body.html()"
-            }
-        ]
-    },
-    {
+            ]
+        },
+        {
+            "title": "JavaScript",
+            "questions": [
+                {
+                    "question": "What does JavaScript primarily add to web pages?",
+                    "options": ["Style", "Behavior", "Structure", "Layout"],
+                    "answer": "Behavior"
+                },
+                {
+                    "question": "What is the correct way to declare a JavaScript variable?",
+                    "options": ["let myVar = 5", "variable myVar = 5;", "myVar: 5;", "var myVar = 5"],
+                    "answer": "let myVar = 5"
+                },
+                {
+                    "question": "Which operator is used for equality comparison in JavaScript?",
+                    "options": ["==", "===", "=", "!="],
+                    "answer": "==="
+                },
+                {
+                    "question": "What is the purpose of the \"if\" statement in JavaScript?",
+                    "options": [
+                        "Loop through an array",
+                        "Declare a function",
+                        "Make a decision",
+                        "Define a class"
+                    ],
+                    "answer": "Make a decision"
+                },
+                {
+                    "question": "How do you write a comment in JavaScript?",
+                    "options": [
+                        "",
+                        "// This is a comment",
+                        "/* This is a comment */",
+                        "-- This is a comment"
+                    ],
+                    "answer": "// This is a comment"
+                },
+                {
+                    "question": "Which keyword is used to declare a constant variable in JavaScript?",
+                    "options": ["var", "let", "const", "final"],
+                    "answer": "const"
+                },
+                {
+                    "question": "What is the value of `typeof null` in JavaScript?",
+                    "options": ["\"null\"", "\"undefined\"", "\"object\"", "\"number\""],
+                    "answer": "\"object\""
+                },
+                {
+                    "question": "How do you declare a string in JavaScript?",
+                    "options": ["'myString'", "\"myString\"", "`myString`", "All of the above"],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "What is the result of `3 + '3'` in JavaScript?",
+                    "options": ["6", "'33'", "33", "'6'"],
+                    "answer": "'33'"
+                },
+                {
+                    "question": "How can you check if a variable is an array in JavaScript?",
+                    "options": [
+                        "Using typeof",
+                        "Using `Array.isArray()`",
+                        "Using `isType()`",
+                        "Using `instanceof`"
+                    ],
+                    "answer": "Using `Array.isArray()`"
+                },
+                {
+                    "question": "Which keyword is used to declare a function in JavaScript?",
+                    "options": ["def", "function", "func", "fn"],
+                    "answer": "function"
+                },
+                {
+                    "question": "What is a function that calls itself in JavaScript?",
+                    "options": [
+                        "Recursive function",
+                        "Self-invoking function",
+                        "Anonymous function",
+                        "Nested function"
+                    ],
+                    "answer": "Recursive function"
+                },
+                {
+                    "question": "What is a closure in JavaScript?",
+                    "options": [
+                        "A function that takes no arguments",
+                        "A variable that is only accessible within a function",
+                        "A function that has access to variables from its outer scope",
+                        "A built-in JavaScript class"
+                    ],
+                    "answer": "A function that has access to variables from its outer scope"
+                },
+                {
+                    "question": "How do you pass arguments to a JavaScript function?",
+                    "options": [
+                        "Inside square brackets []",
+                        "Inside curly braces {}",
+                        "Inside parentheses ()",
+                        "Inside angle brackets <>"
+                    ],
+                    "answer": "Inside parentheses ()"
+                },
+                {
+                    "question": "What is the \"return\" statement used for in a function?",
+                    "options": [
+                        "To exit the function",
+                        "To declare a variable",
+                        "To output a value from the function",
+                        "To define a loop"
+                    ],
+                    "answer": "To output a value from the function"
+                },
+                {
+                    "question": "Which loop is used for iterating over the properties of an object?",
+                    "options": ["for loop", "while loop", "do...while loop", "for...in loop"],
+                    "answer": "for...in loop"
+                },
+                {
+                    "question": "How do you write an \"if-else\" statement in JavaScript?",
+                    "options": [
+                        "if {...} else {...}",
+                        "if (...) { ... } else {...}",
+                        "if (...) {...} elseif {...}",
+                        "if (...) { ... } else if {...}"
+                    ],
+                    "answer": "if (...) { ... } else {...}"
+                },
+                {
+                    "question": "Which operator is used for logical \"OR\" in JavaScript?",
+                    "options": ["&&", "||", "!", "&"],
+                    "answer": "||"
+                },
+                {
+                    "question": "What will the following code output: `for (var i=0; i<5; i++) { console.log(i); }`",
+                    "options": ["0, 1, 2, 3, 4", "1, 2, 3, 4, 5", "0, 1, 2, 3, 4, 5", "5, 4, 3, 2, 1, 0"],
+                    "answer": "0, 1, 2, 3, 4"
+                },
+                {
+                    "question": "What is the purpose of a \"switch\" statement in JavaScript?",
+                    "options": [
+                        "To create a loop",
+                        "To define a function",
+                        "To make multiple comparisons based on a single value",
+                        "To handle exceptions"
+                    ],
+                    "answer": "To make multiple comparisons based on a single value"
+                },
+                {
+                    "question": "How do you access the last element of an array in JavaScript?",
+                    "options": ["arr[-1]", "arr[last]", "arr.end", "arr[arr.length - 1]"],
+                    "answer": "arr[arr.length - 1]"
+                },
+                {
+                    "question": "What is the syntax for creating an object in JavaScript?",
+                    "options": ["{key: value}", "(key: value)", "[key, value]", "key = value"],
+                    "answer": "{key: value}"
+                },
+                {
+                    "question": "How do you add a key-value pair to an existing object in JavaScript?",
+                    "options": [
+                        "obj.add(key, value)",
+                        "obj[key] = value",
+                        "obj.set(key, value)",
+                        "obj.insert(key, value)"
+                    ],
+                    "answer": "obj[key] = value"
+                },
+                {
+                    "question": "What is the purpose of the \"length\" property of an array in JavaScript?",
+                    "options": [
+                        "To check if the array is empty",
+                        "To get the number of elements in the array",
+                        "To access the last element of the array",
+                        "To reverse the array"
+                    ],
+                    "answer": "To get the number of elements in the array"
+                },
+                {
+                    "question": "How do you remove an element from the end of an array in JavaScript?",
+                    "options": ["pop()", "shift()", "push()", "unshift()"],
+                    "answer": "pop()"
+                },
+                {
+                    "question": "What is the difference between \"null\" and \"undefined\" in JavaScript?",
+                    "options": [
+                        "They are the same.",
+                        "\"Null\" is an object, and \"undefined\" is a primitive value.",
+                        "\"Null\" represents the intentional absence of any object value, and \"undefined\" represents an uninitialized variable.",
+                        "\"Null\" is used for strings, and \"undefined\" is used for numbers."
+                    ],
+                    "answer": "\"Null\" represents the intentional absence of any object value, and \"undefined\" represents an uninitialized variable."
+                },
+                {
+                    "question": "What is the purpose of the \"this\" keyword in JavaScript?",
+                    "options": [
+                        "It refers to the current function.",
+                        "It refers to the global object.",
+                        "It refers to the parent object.",
+                        "It refers to the current instance of an object."
+                    ],
+                    "answer": "It refers to the current instance of an object."
+                },
+                {
+                    "question": "What is a callback function in JavaScript?",
+                    "options": [
+                        "A function that is called at the beginning of a program",
+                        "A function that returns a value",
+                        "A function that is passed as an argument to another function and is intended to be called later",
+                        "A built-in function in JavaScript"
+                    ],
+                    "answer": "A function that is passed as an argument to another function and is intended to be called later"
+                },
+                {
+                    "question": "What is the purpose of the \"super\" keyword in JavaScript?",
+                    "options": [
+                        "To call the constructor of the parent class",
+                        "To create a new instance of an object",
+                        "To stop execution of a function",
+                        "To access the parent object's properties"
+                    ],
+                    "answer": "To call the constructor of the parent class"
+                },
+                {
+                    "question": "What is the \"constructor\" property in JavaScript?",
+                    "options": [
+                        "It specifies the color of an object.",
+                        "It returns the constructor function for an object.",
+                        "It defines the prototype of an object.",
+                        "It sets the class of an object."
+                    ],
+                    "answer": "It returns the constructor function for an object."
+                },
+                {
+                    "question": "How can you add a method to an existing JavaScript object?",
+                    "options": [
+                        "By modifying its prototype",
+                        "By using the \"addMethod\" function",
+                        "By using the \"extend\" keyword",
+                        "By creating a new object"
+                    ],
+                    "answer": "By modifying its prototype"
+                },
+                {
+                    "question": "What is the purpose of the \"let\" keyword in ES6?",
+                    "options": [
+                        "To declare a variable with block scope",
+                        "To declare a constant variable",
+                        "To declare a global variable",
+                        "To declare a variable with function scope"
+                    ],
+                    "answer": "To declare a variable with block scope"
+                },
+                {
+                    "question": "What does the Document Object Model (DOM) represent in a web page?",
+                    "options": [
+                        "The page's layout",
+                        "The server's response",
+                        "The structure of the HTML elements",
+                        "The browser's history"
+                    ],
+                    "answer": "The structure of the HTML elements"
+                },
+                {
+                    "question": "How do you select an element by its ID in the DOM using JavaScript?",
+                    "options": [
+                        "getElementById('id')",
+                        "selectElement('id')",
+                        "querySelector('#id')",
+                        "getElementByTag('id')"
+                    ],
+                    "answer": "getElementById('id')"
+                },
+                {
+                    "question": "What is the purpose of the \"innerHTML\" property in the DOM?",
+                    "options": [
+                        "To get or set the text content of an HTML element",
+                        "To hide an element",
+                        "To change the element's font size",
+                        "To access the element's parent"
+                    ],
+                    "answer": "To get or set the text content of an HTML element"
+                },
+                {
+                    "question": "What is an event listener in JavaScript?",
+                    "options": [
+                        "A way to add audio to a web page",
+                        "A function that runs when an event occurs",
+                        "A type of error message",
+                        "A method to style an element"
+                    ],
+                    "answer": "A function that runs when an event occurs"
+                },
+                {
+                    "question": "How do you prevent the default behavior of an event in JavaScript?",
+                    "options": [
+                        "event.preventDefault()",
+                        "event.stopPropagation()",
+                        "event.pause()",
+                        "event.stop()"
+                    ],
+                    "answer": "event.preventDefault()"
+                },
+                {
+                    "question": "What is the purpose of the \"try...catch\" statement in JavaScript?",
+                    "options": [
+                        "To create a loop",
+                        "To handle exceptions and errors",
+                        "To define a function",
+                        "To declare a variable"
+                    ],
+                    "answer": "To handle exceptions and errors"
+                },
+                {
+                    "question": "What is an exception in JavaScript?",
+                    "options": [
+                        "A special type of variable",
+                        "An error that occurs during the execution of a program",
+                        "A reserved keyword",
+                        "A type of function"
+                    ],
+                    "answer": "An error that occurs during the execution of a program"
+                },
+                {
+                    "question": "What is the \"finally\" block used for in a \"try...catch\" statement?",
+                    "options": [
+                        "To define a function",
+                        "To run code regardless of whether an exception is thrown or not",
+                        "To execute code before the \"try\" block",
+                        "To catch all errors in the program"
+                    ],
+                    "answer": "To run code regardless of whether an exception is thrown or not"
+                },
+                {
+                    "question": "How do you throw a custom error in JavaScript?",
+                    "options": [
+                        "By using the \"error()\" function",
+                        "By calling the \"throw\" statement with an error message",
+                        "By using the \"raise\" keyword",
+                        "By declaring a variable with the name \"error\""
+                    ],
+                    "answer": "By calling the \"throw\" statement with an error message"
+                },
+                {
+                    "question": "What is the purpose of the \"catch\" block in a \"try...catch\" statement?",
+                    "options": [
+                        "To execute code after the \"try\" block",
+                        "To handle and specify what to do when an exception is thrown",
+                        "To define a function",
+                        "To catch all errors in the program"
+                    ],
+                    "answer": "To handle and specify what to do when an exception is thrown"
+                },
+                {
+                    "question": "What is event delegation in JavaScript?",
+                    "options": [
+                        "A way to delay the execution of event listeners",
+                        "A method for handling events using promises",
+                        "A technique to attach a single event listener to a common ancestor of multiple elements",
+                        "A way to stop event propagation"
+                    ],
+                    "answer": "A technique to attach a single event listener to a common ancestor of multiple elements"
+                },
+                {
+                    "question": "What is the purpose of a \"do...while\" loop in JavaScript?",
+                    "options": [
+                        "To create an infinite loop",
+                        "To iterate through the properties of an object",
+                        "To execute a block of code at least once, and then continue as long as a condition is true",
+                        "To handle exceptions"
+                    ],
+                    "answer": "To execute a block of code at least once, and then continue as long as a condition is true"
+                },
+                {
+                    "question": "What is the difference between \"var\" and \"let\" in terms of scope?",
+                    "options": [
+                        "\"var\" has block scope, and \"let\" has function scope.",
+                        "\"var\" has function scope, and \"let\" has block scope.",
+                        "\"var\" is used for declarations, and \"let\" is used for assignments.",
+                        "\"var\" is a reserved keyword, and \"let\" is a data type."
+                    ],
+                    "answer": "\"var\" has function scope, and \"let\" has block scope."
+                },
+                {
+                    "question": "In JavaScript, what is the data type of the following variable? let x = 7.5",
+                    "options": ["Decimal", "Number", "Integer", "Float"],
+                    "answer": "Number"
+                },
+                {
+                    "question": "What keyword is used to define a function in JavaScript?",
+                    "options": ["def", "func", "function"],
+                    "answer": "function"
+                },
+                {
+                    "question": "If a variable is declared using the let keyword, it can never change its data type.",
+                    "options": ["True", "False"],
+                    "answer": "False"
+                },
+                {
+                    "question": "alert(8); is the same as window.alert(8);.",
+                    "options": ["True", "False"],
+                    "answer": "True"
+                },
+                {
+                    "question": "What are the data types of 10, 'Sally', and true respectively in JS?",
+                    "options": [
+                        "Number, String, Boolean",
+                        "Integer, Text, Boolean",
+                        "Float, String, Bit",
+                        "Number, Character, Boolean"
+                    ],
+                    "answer": "Number, String, Boolean"
+                },
+                {
+                    "question": "What is NOT a correct syntax for writing output in JavaScript?",
+                    "options": [
+                        "window.alert()",
+                        "console.log()",
+                        "body.html()",
+                        "document.write()"
+                    ],
+                    "answer": "body.html()"
+                }
+            ]
+        },
+        {
             "title": "PHP",
             "questions": [
                 {
                     "question": "PHP is a scripting language.",
-                    "options": [
-                        "client-side",
-                        "server-side",
-                        "desktop",
-                        "mobile"
-                    ],
+                    "options": ["client-side", "server-side", "desktop", "mobile"],
                     "answer": "server-side"
                 },
                 {
                     "question": "PHP runs on the",
-                    "options": [
-                        "browser",
-                        "server",
-                        "mobile app",
-                        "OS kernel"
-                    ],
+                    "options": ["browser", "server", "mobile app", "OS kernel"],
                     "answer": "server"
                 },
                 {
                     "question": "Approximately what percentage of known websites use PHP?",
-                    "options": [
-                        "20%",
-                        "40%",
-                        "70%",
-                        "90%"
-                    ],
+                    "options": ["20%", "40%", "70%", "90%"],
                     "answer": "70%"
                 },
                 {
                     "question": "Developers prefer PHP because it is",
-                    "options": [
-                        "simple and flexible",
-                        "slow",
-                        "complex",
-                        "expensive"
-                    ],
+                    "options": ["simple and flexible", "slow", "complex", "expensive"],
                     "answer": "simple and flexible"
                 },
                 {
                     "question": "PHP is commonly used with databases.",
-                    "options": [
-                        "NoSQL",
-                        "Relational",
-                        "Graph",
-                        "In-memory"
-                    ],
+                    "options": ["NoSQL", "Relational", "Graph", "In-memory"],
                     "answer": "Relational"
                 },
                 {
                     "question": "Examples of databases often used with PHP include:",
-                    "options": [
-                        "Firebase",
-                        "MongoDB",
-                        "MySQL",
-                        "Redis"
-                    ],
+                    "options": ["Firebase", "MongoDB", "MySQL", "Redis"],
                     "answer": "MySQL"
                 },
                 {
                     "question": "PHP files can contain:",
-                    "options": [
-                        "HTML",
-                        "CSS",
-                        "JavaScript",
-                        "All of the above"
-                    ],
+                    "options": ["HTML", "CSS", "JavaScript", "All of the above"],
                     "answer": "All of the above"
                 },
                 {
                     "question": "XAMPP contains which web server?",
-                    "options": [
-                        "Nginx",
-                        "Apache",
-                        "IIS",
-                        "Tornado"
-                    ],
+                    "options": ["Nginx", "Apache", "IIS", "Tornado"],
                     "answer": "Apache"
                 },
                 {
                     "question": "PHP was originally an acronym for:",
-                    "options": [
-                        "Personal Home Page",
-                        "Program Hypertext Page",
-                        "Public HTML Processor",
-                        "Professional Hosting Program"
-                    ],
+                    "options": ["Personal Home Page", "Program Hypertext Page", "Public HTML Processor", "Professional Hosting Program"],
                     "answer": "Personal Home Page"
                 },
                 {
                     "question": "Today PHP stands for:",
-                    "options": [
-                        "Personal Hosting Program",
-                        "Hypertext Preprocessor",
-                        "Program Handling Protocol",
-                        "Hyper Terminal Process"
-                    ],
+                    "options": ["Personal Hosting Program", "Hypertext Preprocessor", "Program Handling Protocol", "Hyper Terminal Process"],
                     "answer": "Hypertext Preprocessor"
                 },
                 {
                     "question": "XAMPP is recommended for:",
-                    "options": [
-                        "mobile development",
-                        "PHP web server setup",
-                        "AI development",
-                        "game development"
-                    ],
+                    "options": ["mobile development", "PHP web server setup", "AI development", "game development"],
                     "answer": "PHP web server setup"
                 },
                 {
                     "question": "XAMPP stands for:",
-                    "options": [
-                        "Xtreme Application Machine PHP Program",
-                        "XML Apache PHP Platform",
-                        "Apache+MariaDB+PHP+Perl",
-                        "Apache+MongoDB+Python+Perl"
-                    ],
+                    "options": ["Xtreme Application Machine PHP Program", "XML Apache PHP Platform", "Apache+MariaDB+PHP+Perl", "Apache+MongoDB+Python+Perl"],
                     "answer": "Apache+MariaDB+PHP+Perl"
                 },
                 {
                     "question": "XAMPP is",
-                    "options": [
-                        "a single program",
-                        "a cross-platform server stack",
-                        "a mobile app",
-                        "a browser plugin"
-                    ],
+                    "options": ["a single program", "a cross-platform server stack", "a mobile app", "a browser plugin"],
                     "answer": "a cross-platform server stack"
                 },
                 {
                     "question": "After installation, Apache and MySQL in XAMPP must be:",
-                    "options": [
-                        "Removed",
-                        "Paused",
-                        "Started manually",
-                        "Restarted daily"
-                    ],
+                    "options": ["Removed", "Paused", "Started manually", "Restarted daily"],
                     "answer": "Started manually"
                 },
                 {
                     "question": "If you restart your computer, you must",
-                    "options": [
-                        "reinstall XAMPP",
-                        "start Apache & MySQL again",
-                        "format the drive",
-                        "open PHP files manually"
-                    ],
+                    "options": ["reinstall XAMPP", "start Apache & MySQL again", "format the drive", "open PHP files manually"],
                     "answer": "start Apache & MySQL again"
                 },
                 {
                     "question": "XAMPP is installed under the directory by default.",
-                    "options": [
-                        "Documents",
-                        "Downloads",
-                        "Root (C:)",
-                        "Desktop"
-                    ],
+                    "options": ["Documents", "Downloads", "Root (C:)", "Desktop"],
                     "answer": "Root (C:)"
                 },
                 {
                     "question": "The folder that stores website files inside XAMPP is:",
-                    "options": [
-                        "phpFolder",
-                        "wwwroot",
-                        "htdocs",
-                        "webfiles"
-                    ],
+                    "options": ["phpFolder", "wwwroot", "htdocs", "webfiles"],
                     "answer": "htdocs"
                 },
                 {
                     "question": "To create a website, you make a new folder inside:",
-                    "options": [
-                        "C:\\Windows",
-                        "C:\\Users",
-                        "C:\\xampp\\htdocs",
-                        "C:\\Program Files"
-                    ],
+                    "options": ["C:\\Windows", "C:\\Users", "C:\\xampp\\htdocs", "C:\\Program Files"],
                     "answer": "C:\\xampp\\htdocs"
                 },
                 {
                     "question": "The default homepage file for PHP websites is:",
-                    "options": [
-                        "home.html",
-                        "start.php",
-                        "index.php",
-                        "default.php"
-                    ],
+                    "options": ["home.html", "start.php", "index.php", "default.php"],
                     "answer": "index.php"
                 },
                 {
                     "question": "The recommended code editor is:",
-                    "options": [
-                        "Notepad",
-                        "Word",
-                        "VS Code",
-                        "PowerShell"
-                    ],
+                    "options": ["Notepad", "Word", "VS Code", "PowerShell"],
                     "answer": "VS Code"
                 },
                 {
                     "question": "The extension for live preview of websites is:",
-                    "options": [
-                        "Live Browser",
-                        "Live Server",
-                        "Web Started",
-                        "Page Runner"
-                    ],
+                    "options": ["Live Browser", "Live Server", "Web Started", "Page Runner"],
                     "answer": "Live Server"
                 },
                 {
                     "question": "Another useful PHP extension is:",
-                    "options": [
-                        "PHP Server",
-                        "PHP AutoFix",
-                        "PHP Linker",
-                        "PHP Express"
-                    ],
+                    "options": ["PHP Server", "PHP AutoFix", "PHP Linker", "PHP Express"],
                     "answer": "PHP Server"
                 },
                 {
                     "question": "To install extensions, you navigate to:",
-                    "options": [
-                        "File → Help",
-                        "File → Preferences → Extensions",
-                        "Edit → Tools",
-                        "Run → Terminal"
-                    ],
+                    "options": ["File → Help", "File → Preferences → Extensions", "Edit → Tools", "Run → Terminal"],
                     "answer": "File → Preferences → Extensions"
                 },
                 {
                     "question": "Live Server Web Extension is added to:",
-                    "options": [
-                        "VS Code only",
-                        "Windows settings",
-                        "Google Chrome browser",
-                        "PHP configuration file"
-                    ],
+                    "options": ["VS Code only", "Windows settings", "Google Chrome browser", "PHP configuration file"],
                     "answer": "Google Chrome browser"
                 },
                 {
                     "question": "After installing Live Server Web Extension, you must:",
-                    "options": [
-                        "Restart PC",
-                        "Restart browser",
-                        "Reinstall extensions",
-                        "Delete XAMPP"
-                    ],
+                    "options": ["Restart PC", "Restart browser", "Reinstall extensions", "Delete XAMPP"],
                     "answer": "Restart browser"
                 },
                 {
                     "question": "To access your PHP website, you visit:",
-                    "options": [
-                        "http://localhost",
-                        "localhost/MYWEBSITE/",
-                        "http://127.0.0.1/admin",
-                        "mywebsite.com"
-                    ],
+                    "options": ["http://localhost", "localhost/MYWEBSITE/", "http://127.0.0.1/admin", "mywebsite.com"],
                     "answer": "localhost/MYWEBSITE/"
                 },
                 {
                     "question": "VS Code is used mainly for:",
-                    "options": [
-                        "Server hosting",
-                        "Code editing",
-                        "Domain registration",
-                        "Network security"
-                    ],
+                    "options": ["Server hosting", "Code editing", "Domain registration", "Network security"],
                     "answer": "Code editing"
                 },
                 {
                     "question": "The file extension for PHP files is:",
-                    "options": [
-                        ".html",
-                        ".css",
-                        ".php",
-                        ".js"
-                    ],
+                    "options": [".html", ".css", ".php", ".js"],
                     "answer": ".php"
                 },
                 {
                     "question": "PHP code is wrapped inside:",
-                    "options": [
-                        "<?php ... ?>",
-                        "<script>...</script>",
-                        "<php>...</php>",
-                        "[php]...[/php]"
-                    ],
+                    "options": ["<?php ... ?>", "<? ... ?>", "<script> ... </script>", "[php]...[/php]"],
                     "answer": "<?php ... ?>"
                 },
                 {
                     "question": "To print text in PHP, you use:",
-                    "options": [
-                        "print()",
-                        "echo",
-                        "printf",
-                        "message()"
-                    ],
+                    "options": ["print()", "echo", "printf", "message()"],
                     "answer": "echo"
                 },
                 {
                     "question": "A single-line PHP comment begins with:",
-                    "options": [
-                        "# or //",
-                        "/**",
-                        "<!--",
-                        "%"
-                    ],
+                    "options": ["# or //", "/", "/*", "%"],
                     "answer": "# or //"
                 },
                 {
-                    "question": "A multi-line PHP comment begins with:",
-                    "options": [
-                        "",
-                        "#...#",
-                        "/*...*/",
-                        "%%...%%"
-                    ],
-                    "answer": "/*...*/"
-                },
-                {
                     "question": "PHP runs before HTML is sent to the:",
-                    "options": [
-                        "database",
-                        "browser",
-                        "compiler",
-                        "printer"
-                    ],
+                    "options": ["database", "browser", "compiler", "printer"],
                     "answer": "browser"
                 },
                 {
                     "question": "The browser request is processed by:",
-                    "options": [
-                        "PHP on the server",
-                        "User's browser",
-                        "RAM only",
-                        "VS Code"
-                    ],
+                    "options": ["PHP on the server", "User's browser", "RAM only", "VS Code"],
                     "answer": "PHP on the server"
                 },
                 {
                     "question": "Which PHP code outputs: I love pizza?",
-                    "options": [
-                        "print(\"I love pizza\")",
-                        "echo \"I love pizza\";",
-                        "write(\"I love pizza\")",
-                        "log(\"I love pizza\")"
-                    ],
+                    "options": ["print(\"I love pizza\")", "echo \"I love pizza\";", "write(\"I love pizza\")", "log(\"I love pizza\")"],
                     "answer": "echo \"I love pizza\";"
                 },
                 {
                     "question": "PHP can output HTML content:",
-                    "options": [
-                        "True",
-                        "False"
-                    ],
+                    "options": ["True", "False"],
                     "answer": "True"
                 },
                 {
                     "question": "The file containing your code is located inside:",
-                    "options": [
-                        "htdocs/mywebsite/",
-                        "temp/php/",
-                        "documents/projects/",
-                        "desktop/folder/"
-                    ],
+                    "options": ["htdocs/mywebsite/", "temp/php/", "documents/projects/", "desktop/folder/"],
                     "answer": "htdocs/mywebsite/"
                 },
                 {
                     "question": "XAMPP allows PHP to run because it includes:",
-                    "options": [
-                        "PHP interpreter",
-                        "Android emulator",
-                        "Python interpreter",
-                        "C++ compiler"
-                    ],
+                    "options": ["PHP interpreter", "Android emulator", "Python interpreter", "C++ compiler"],
                     "answer": "PHP interpreter"
                 },
                 {
                     "question": "PHP communicates with databases and returns:",
-                    "options": [
-                        "PDF",
-                        "HTML",
-                        "CSS",
-                        "ZIP files"
-                    ],
+                    "options": ["PDF", "HTML", "CSS", "ZIP files"],
                     "answer": "HTML"
                 },
                 {
                     "question": "Apache handles:",
-                    "options": [
-                        "Saving files",
-                        "Serving web pages",
-                        "Creating databases",
-                        "Editing documents"
-                    ],
+                    "options": ["Saving files", "Serving web pages", "Creating databases", "Editing documents"],
                     "answer": "Serving web pages"
                 },
                 {
                     "question": "MySQL in XAMPP is used for:",
-                    "options": [
-                        "styling websites",
-                        "storing data",
-                        "rendering CSS",
-                        "compiling code"
-                    ],
+                    "options": ["styling websites", "storing data", "rendering CSS", "compiling code"],
                     "answer": "storing data"
                 },
                 {
                     "question": "VS Code must be connected to the project folder via:",
-                    "options": [
-                        "Open Folder",
-                        "Open Terminal",
-                        "Open File",
-                        "Connect Server"
-                    ],
+                    "options": ["Open Folder", "Open Terminal", "Open File", "Connect Server"],
                     "answer": "Open Folder"
                 },
                 {
                     "question": "PHP code must end with a:",
-                    "options": [
-                        "Comma",
-                        "Colon",
-                        "Semicolon",
-                        "Period"
-                    ],
+                    "options": ["Comma", "Colon", "Semicolon", "Period"],
                     "answer": "Semicolon"
                 },
                 {
                     "question": "PHP comments are used to:",
-                    "options": [
-                        "Improve website speed",
-                        "Execute code",
-                        "Explain code",
-                        "Save memory"
-                    ],
+                    "options": ["Improve website speed", "Execute code", "Explain code", "Save memory"],
                     "answer": "Explain code"
                 },
                 {
                     "question": "PHP is popular among:",
-                    "options": [
-                        "large enterprises only",
-                        "small businesses",
-                        "mobile gamers",
-                        "Windows admins"
-                    ],
+                    "options": ["large enterprises only", "small businesses", "mobile gamers", "Windows admins"],
                     "answer": "small businesses"
                 },
                 {
                     "question": "A PHP webpage can be viewed by visiting:",
-                    "options": [
-                        "Normal file explorer",
-                        "When Apache is running",
-                        "Only offline",
-                        "Only online"
-                    ],
+                    "options": ["Normal file explorer", "When Apache is running", "Only offline", "Only online"],
                     "answer": "When Apache is running"
                 },
                 {
                     "question": "Live Server extension helps to:",
-                    "options": [
-                        "Add animations",
-                        "Restart PC",
-                        "Preview website quickly",
-                        "Install PHP"
-                    ],
+                    "options": ["Add animations", "Restart PC", "Preview website quickly", "Install PHP"],
                     "answer": "Preview website quickly"
                 },
                 {
                     "question": "PHP supports how many main data types?",
-                    "options": [
-                        "3",
-                        "5",
-                        "8",
-                        "10"
-                    ],
+                    "options": ["3", "5", "8", "10"],
                     "answer": "8"
                 },
                 {
                     "question": "A string in PHP is:",
-                    "options": [
-                        "Only numbers",
-                        "A sequence of characters",
-                        "A Boolean value",
-                        "A PHP function"
-                    ],
+                    "options": ["Only numbers", "A sequence of characters", "A Boolean value", "A PHP function"],
                     "answer": "A sequence of characters"
                 },
                 {
                     "question": "Which of the following is an example of a string?",
-                    "options": [
-                        "123",
-                        "\"Hello world!\"",
-                        "true",
-                        "10.5"
-                    ],
+                    "options": ["123", "\"Hello world!\"", "true", "10.5"],
                     "answer": "\"Hello world!\""
                 },
                 {
                     "question": "You can use quotes for strings in PHP.",
-                    "options": [
-                        "single only",
-                        "double only",
-                        "both single and double",
-                        "no"
-                    ],
+                    "options": ["single only", "double only", "both single and double", "no"],
                     "answer": "both single and double"
                 },
                 {
                     "question": "The strlen() function:",
-                    "options": [
-                        "Reverses a string",
-                        "Counts words",
-                        "Finds string length",
-                        "Replaces text"
-                    ],
+                    "options": ["Reverses a string", "Counts words", "Finds string length", "Replaces text"],
                     "answer": "Finds string length"
                 },
                 {
                     "question": "Output of strlen(\"Hello world!\") is:",
-                    "options": [
-                        "10",
-                        "11",
-                        "12",
-                        "13"
-                    ],
+                    "options": ["10", "11", "12", "13"],
                     "answer": "12"
                 },
                 {
                     "question": "The str_word_count() function:",
-                    "options": [
-                        "Counts characters",
-                        "Finds text position",
-                        "Counts words in a string",
-                        "Converts to uppercase"
-                    ],
+                    "options": ["Counts characters", "Finds text position", "Counts words in a string", "Converts to uppercase"],
                     "answer": "Counts words in a string"
                 },
                 {
                     "question": "Output of str_word_count(\"Hello world!\") is:",
-                    "options": [
-                        "1",
-                        "2",
-                        "3",
-                        "4"
-                    ],
+                    "options": ["1", "2", "3", "4"],
                     "answer": "2"
                 },
                 {
                     "question": "The function that reverses a string is:",
-                    "options": [
-                        "strpos()",
-                        "strlen()",
-                        "strrev()",
-                        "array()"
-                    ],
+                    "options": ["strpos()", "strlen()", "strrev()", "array()"],
                     "answer": "strrev()"
                 },
                 {
                     "question": "Output of strrev(\"Hello world!\") is:",
-                    "options": [
-                        "dlrow olleH!",
-                        "!dlrow olleH",
-                        "Hello world",
-                        "world hello"
-                    ],
+                    "options": ["dlrow olleH!", "!dlrow olleH", "Hello world", "world hello"],
                     "answer": "!dlrow olleH"
                 },
                 {
                     "question": "The strpos() function returns:",
-                    "options": [
-                        "Boolean only",
-                        "The position of first match",
-                        "Word count",
-                        "String length"
-                    ],
+                    "options": ["Boolean only", "The position of first match", "Word count", "String length"],
                     "answer": "The position of first match"
                 },
                 {
                     "question": "If text is not found in strpos(), PHP returns:",
-                    "options": [
-                        "0",
-                        "-1",
-                        "FALSE",
-                        "NULL"
-                    ],
+                    "options": ["0", "-1", "FALSE", "NULL"],
                     "answer": "FALSE"
                 },
                 {
                     "question": "The function used to replace text inside a string is:",
-                    "options": [
-                        "strchange()",
-                        "replace_text()",
-                        "str_replace()",
-                        "swap()"
-                    ],
+                    "options": ["strchange()", "replace_text()", "str_replace()", "swap()"],
                     "answer": "str_replace()"
                 },
                 {
                     "question": "Output of str_replace(\"world\", \"Dolly\", \"Hello world!\") is:",
-                    "options": [
-                        "Hello world!",
-                        "Hello Dolly!",
-                        "Hello Dolly world!",
-                        "Dolly Hello!"
-                    ],
+                    "options": ["Hello world!", "Hello Dolly!", "Hello Dolly world!", "Dolly Hello!"],
                     "answer": "Hello Dolly!"
                 },
                 {
                     "question": "An integer in PHP must:",
-                    "options": [
-                        "Include a decimal point",
-                        "Contain only letters",
-                        "Be without a decimal",
-                        "Be inside quotes"
-                    ],
+                    "options": ["Include a decimal point", "Contain only letters", "Be without a decimal", "Be inside quotes"],
                     "answer": "Be without a decimal"
                 },
                 {
                     "question": "Which is NOT an integer format?",
-                    "options": [
-                        "Decimal",
-                        "Hexadecimal",
-                        "Octal",
-                        "Floating"
-                    ],
+                    "options": ["Decimal", "Hexadecimal", "Octal", "Floating"],
                     "answer": "Floating"
                 },
                 {
                     "question": "The var_dump() function shows:",
-                    "options": [
-                        "Only value",
-                        "Only type",
-                        "Both type and value",
-                        "Nothing"
-                    ],
+                    "options": ["Only value", "Only type", "Both type and value", "Nothing"],
                     "answer": "Both type and value"
                 },
                 {
                     "question": "A float is:",
-                    "options": [
-                        "A number with decimals",
-                        "A Boolean",
-                        "A string",
-                        "An array"
-                    ],
+                    "options": ["A number with decimals", "A Boolean", "A string", "An array"],
                     "answer": "A number with decimals"
                 },
                 {
                     "question": "Which of the following is a float?",
-                    "options": [
-                        "10",
-                        "\"10\"",
-                        "10.5",
-                        "true"
-                    ],
+                    "options": ["10", "\"10\"", "10.5", "true"],
                     "answer": "10.5"
                 },
                 {
                     "question": "Booleans represent:",
-                    "options": [
-                        "Only positive numbers",
-                        "TRUE or FALSE",
-                        "Only strings",
-                        "Arrays"
-                    ],
+                    "options": ["Only positive numbers", "TRUE or FALSE", "Only strings", "Arrays"],
                     "answer": "TRUE or FALSE"
                 },
                 {
                     "question": "Which of the following is a Boolean value?",
-                    "options": [
-                        "\"true\"",
-                        "1.0",
-                        "TRUE",
-                        "\"FALSE\""
-                    ],
+                    "options": ["\"true\"", "1.0", "TRUE", "\"FALSE\""],
                     "answer": "TRUE"
                 },
                 {
                     "question": "An array stores:",
-                    "options": [
-                        "One value",
-                        "Only strings",
-                        "Multiple values in one variable",
-                        "Only numbers"
-                    ],
+                    "options": ["One value", "Only strings", "Multiple values in one variable", "Only numbers"],
                     "answer": "Multiple values in one variable"
                 },
                 {
                     "question": "The example `$cars = array(\"Volvo\", \"BMW\", \"Toyota\");` is a:",
-                    "options": [
-                        "Boolean",
-                        "Float",
-                        "String",
-                        "Indexed array"
-                    ],
+                    "options": ["Boolean", "Float", "String", "Indexed array"],
                     "answer": "Indexed array"
                 },
                 {
                     "question": "Arrays in PHP can store:",
-                    "options": [
-                        "Only integers",
-                        "Only strings",
-                        "Different data types",
-                        "Functions only"
-                    ],
+                    "options": ["Only integers", "Only strings", "Different data types", "Functions only"],
                     "answer": "Different data types"
                 },
                 {
                     "question": "An associative array uses:",
-                    "options": [
-                        "Numbers as indexes",
-                        "Named keys",
-                        "True/false keys",
-                        "No keys"
-                    ],
+                    "options": ["Numbers as indexes", "Named keys", "True/false keys", "No keys"],
                     "answer": "Named keys"
                 },
                 {
                     "question": "A multidimensional array contains:",
-                    "options": [
-                        "Only one value",
-                        "One array only",
-                        "Arrays inside arrays",
-                        "Strings only"
-                    ],
+                    "options": ["Only one value", "One array only", "Arrays inside arrays", "Strings only"],
                     "answer": "Arrays inside arrays"
                 },
                 {
                     "question": "NULL in PHP means:",
-                    "options": [
-                        "Zero",
-                        "False",
-                        "No value assigned",
-                        "Empty string"
-                    ],
+                    "options": ["Zero", "False", "No value assigned", "Empty string"],
                     "answer": "No value assigned"
                 },
                 {
                     "question": "Which data type is best for TRUE/FALSE values?",
-                    "options": [
-                        "String",
-                        "Boolean",
-                        "Array",
-                        "Float"
-                    ],
+                    "options": ["String", "Boolean", "Array", "Float"],
                     "answer": "Boolean"
                 },
                 {
                     "question": "In PHP, a variable must start with:",
-                    "options": [
-                        "@",
-                        "$",
-                        "#",
-                        "%"
-                    ],
+                    "options": ["@", "$", "#", "%"],
                     "answer": "$"
                 },
                 {
                     "question": "Which of the following is a valid PHP variable name?",
-                    "options": [
-                        "1name",
-                        "@age",
-                        "_value",
-                        "$-var"
-                    ],
+                    "options": ["1name", "@age", "_value", "$-var"],
                     "answer": "_value"
                 },
                 {
                     "question": "PHP variables are created:",
-                    "options": [
-                        "When declared",
-                        "When assigned a value",
-                        "Only after initialization",
-                        "Using the keyword var"
-                    ],
+                    "options": ["When declared", "When assigned a value", "Only after initialization", "Using the keyword var"],
                     "answer": "When assigned a value"
                 },
                 {
                     "question": "In PHP, variable names are:",
-                    "options": [
-                        "Not case-sensitive",
-                        "Sometimes case-sensitive",
-                        "Case-sensitive",
-                        "Always uppercase"
-                    ],
+                    "options": ["Not case-sensitive", "Sometimes case-sensitive", "Case-sensitive", "Always uppercase"],
                     "answer": "Case-sensitive"
                 },
                 {
                     "question": "Which variable assignment is correct?",
-                    "options": [
-                        "txt = \"Hello\";",
-                        "$txt = Hello;",
-                        "$txt = \"Hello\";",
-                        "var $txt = \"Hello\";"
-                    ],
+                    "options": ["txt = \"Hello\";", "$txt = Hello;", "$txt = \"Hello\";", "var $txt = \"Hello\";"],
                     "answer": "$txt = \"Hello\";"
                 },
                 {
                     "question": "To output a variable on screen, you commonly use:",
-                    "options": [
-                        "read()",
-                        "write()",
-                        "echo",
-                        "printf() only"
-                    ],
+                    "options": ["read()", "write()", "echo", "printf() only"],
                     "answer": "echo"
                 },
                 {
                     "question": "Which example outputs \"I love txt!\"?",
-                    "options": [
-                        "echo \"I love $txt!\";",
-                        "print(\"I love txt!\");",
-                        "echo I love $txt;",
-                        "printf(\"I love $txt\");"
-                    ],
+                    "options": ["echo \"I love $txt!\";", "print(\"I love txt!\");", "echo I love $txt;", "printf(\"I love $txt\")"],
                     "answer": "print(\"I love txt!\");"
                 },
                 {
                     "question": "The operator used to join strings is:",
-                    "options": [
-                        "+",
-                        ".",
-                        "*",
-                        "&"
-                    ],
+                    "options": ["+", ".", "*", "&"],
                     "answer": "."
                 },
                 {
                     "question": "What is the output of `echo $x + $y` when `$x = 5`, `$y = 4`?",
-                    "options": [
-                        "45",
-                        "54",
-                        "9",
-                        "0"
-                    ],
+                    "options": ["45", "54", "9", "0"],
                     "answer": "9"
                 },
                 {
                     "question": "A variable declared outside a function has:",
-                    "options": [
-                        "Local scope",
-                        "Global scope",
-                        "Static scope",
-                        "Function scope"
-                    ],
+                    "options": ["Local scope", "Global scope", "Static scope", "Function scope"],
                     "answer": "Global scope"
                 },
                 {
                     "question": "A variable declared inside a function has:",
-                    "options": [
-                        "Global scope",
-                        "Script scope",
-                        "Local scope",
-                        "External scope"
-                    ],
+                    "options": ["Global scope", "Script scope", "Local scope", "External scope"],
                     "answer": "Local scope"
                 },
                 {
                     "question": "Attempting to use a local variable outside its function will:",
-                    "options": [
-                        "Return 0",
-                        "Generate an error",
-                        "Output the value",
-                        "Convert it to global"
-                    ],
+                    "options": ["Return 0", "Generate an error", "Output the value", "Convert it to global"],
                     "answer": "Generate an error"
                 },
                 {
                     "question": "To use a global variable inside a function, you must use:",
-                    "options": [
-                        "include",
-                        "require",
-                        "static",
-                        "global"
-                    ],
+                    "options": ["include", "require", "static", "global"],
                     "answer": "global"
                 },
                 {
                     "question": "What is the output of this code? `$x = 5; $y = 10; function myTest() { global $x, $y; $y = $x + $y; } myTest(); echo $y;`",
-                    "options": [
-                        "10",
-                        "5",
-                        "15",
-                        "Error"
-                    ],
+                    "options": ["10", "5", "15", "Error"],
                     "answer": "15"
                 },
                 {
                     "question": "A static variable inside a function:",
-                    "options": [
-                        "Exists only once",
-                        "Resets every time",
-                        "Cannot be echoed",
-                        "Must be global"
-                    ],
+                    "options": ["Exists only once", "Resets every time", "Cannot be echoed", "Must be global"],
                     "answer": "Exists only once"
                 },
                 {
                     "question": "Which statement is faster?",
-                    "options": [
-                        "print",
-                        "echo",
-                        "Both equal",
-                        "None"
-                    ],
+                    "options": ["print", "echo", "Both equal", "None"],
                     "answer": "echo"
                 },
                 {
                     "question": "Which statement can return a value?",
-                    "options": [
-                        "echo",
-                        "print",
-                        "both",
-                        "neither"
-                    ],
+                    "options": ["echo", "print", "both", "neither"],
                     "answer": "print"
                 },
                 {
                     "question": "Which can take multiple parameters?",
-                    "options": [
-                        "print",
-                        "echo",
-                        "both",
-                        "neither"
-                    ],
+                    "options": ["print", "echo", "both", "neither"],
                     "answer": "echo"
                 },
                 {
                     "question": "Which function is used to create an object?",
-                    "options": [
-                        "class()",
-                        "object()",
-                        "new",
-                        "create_object()"
-                    ],
+                    "options": ["class()", "object()", "new", "create_object()"],
                     "answer": "new"
                 },
                 {
                     "question": "Which defines a class in PHP?",
-                    "options": [
-                        "object Car {}",
-                        "class Car {}",
-                        "Car = class {}",
-                        "define Car {}"
-                    ],
+                    "options": ["object Car {}", "class Car {}", "Car = class {}", "define Car {}"],
                     "answer": "class Car {}"
                 },
                 {
                     "question": "What is output of this code? `class Car { function Car() { $this->model = \"VW\"; } } $herbie = new Car(); echo $herbie->model;`",
-                    "options": [
-                        "Car",
-                        "model",
-                        "VW",
-                        "Error"
-                    ],
+                    "options": ["Car", "model", "VW", "Error"],
                     "answer": "VW"
                 },
                 {
                     "question": "NULL in PHP means:",
-                    "options": [
-                        "Zero",
-                        "Empty string",
-                        "No value assigned",
-                        "Undefined variable"
-                    ],
+                    "options": ["Zero", "Empty string", "No value assigned", "Undefined variable"],
                     "answer": "No value assigned"
                 },
                 {
                     "question": "A variable without a value is automatically:",
-                    "options": [
-                        "FALSE",
-                        "NULL",
-                        "Zero",
-                        "Deleted"
-                    ],
+                    "options": ["FALSE", "NULL", "Zero", "Deleted"],
                     "answer": "NULL"
                 },
                 {
                     "question": "Constants in PHP:",
-                    "options": [
-                        "Can be changed",
-                        "Cannot be changed",
-                        "Must start with $",
-                        "Are case-insensitive by default"
-                    ],
+                    "options": ["Can be changed", "Cannot be changed", "Must start with $", "Are case-insensitive by default"],
                     "answer": "Cannot be changed"
                 },
                 {
                     "question": "Which function is used to define a constant?",
-                    "options": [
-                        "setConstant()",
-                        "const()",
-                        "define()",
-                        "newConstant()"
-                    ],
+                    "options": ["setConstant()", "const()", "define()", "newConstant()"],
                     "answer": "define()"
                 },
                 {
                     "question": "A valid constant name begins with:",
-                    "options": [
-                        "$",
-                        "Letter or underscore",
-                        "Number",
-                        "Any symbol"
-                    ],
+                    "options": ["$", "Letter or underscore", "Number", "Any symbol"],
                     "answer": "Letter or underscore"
                 },
                 {
                     "question": "The third parameter in define() controls:",
-                    "options": [
-                        "Data type",
-                        "Case-sensitivity",
-                        "Visibility",
-                        "Scope"
-                    ],
+                    "options": ["Data type", "Case-sensitivity", "Visibility", "Scope"],
                     "answer": "Case-sensitivity"
                 },
                 {
                     "question": "Constants are automatically:",
-                    "options": [
-                        "Local",
-                        "Private",
-                        "Global",
-                        "Static"
-                    ],
+                    "options": ["Local", "Private", "Global", "Static"],
                     "answer": "Global"
                 },
                 {
                     "question": "What is the output? `define(\"GREETING\", \"Welcome!\"); function test() { echo GREETING; } test();`",
-                    "options": [
-                        "GREETING",
-                        "Error",
-                        "Welcome!",
-                        "Nothing"
-                    ],
+                    "options": ["GREETING", "Error", "Welcome!", "Nothing"],
                     "answer": "Welcome!"
                 },
                 {
                     "question": "Operators in PHP are used to:",
-                    "options": [
-                        "Store variables",
-                        "Perform operations on variables and values",
-                        "Create functions",
-                        "Style HTML"
-                    ],
+                    "options": ["Store variables", "Perform operations on variables and values", "Create functions", "Style HTML"],
                     "answer": "Perform operations on variables and values"
                 },
                 {
                     "question": "Which of the following is NOT a category of PHP operators?",
-                    "options": [
-                        "Arithmetic",
-                        "Logical",
-                        "String",
-                        "Database"
-                    ],
+                    "options": ["Arithmetic", "Logical", "String", "Database"],
                     "answer": "Database"
                 },
                 {
                     "question": "Which operator group performs addition, subtraction, multiplication, etc.?",
-                    "options": [
-                        "Assignment operators",
-                        "Arithmetic operators",
-                        "Logical operators",
-                        "Comparison operators"
-                    ],
+                    "options": ["Assignment operators", "Arithmetic operators", "Logical operators", "Comparison operators"],
                     "answer": "Arithmetic operators"
                 },
                 {
                     "question": "The basic assignment operator in PHP is:",
-                    "options": [
-                        "==",
-                        "=",
-                        "===",
-                        ":="
-                    ],
+                    "options": ["==", "=", "===", ":="],
                     "answer": "="
                 },
                 {
                     "question": "In PHP, `$x = 5 + 3;` assigns:",
-                    "options": [
-                        "5 to x",
-                        "3 to x",
-                        "8 to x",
-                        "Nothing"
-                    ],
+                    "options": ["5 to x", "3 to x", "8 to x", "Nothing"],
                     "answer": "8 to x"
                 },
                 {
                     "question": "Comparison operators are used to:",
-                    "options": [
-                        "Join strings",
-                        "Compare two values",
-                        "Create arrays",
-                        "Assign values"
-                    ],
+                    "options": ["Join strings", "Compare two values", "Create arrays", "Assign values"],
                     "answer": "Compare two values"
                 },
                 {
                     "question": "Which operator checks equality?",
-                    "options": [
-                        "=",
-                        "==",
-                        "===",
-                        "!="
-                    ],
+                    "options": ["=", "==", "===", "!="],
                     "answer": "=="
                 },
                 {
                     "question": "Which operator checks identical value AND type?",
-                    "options": [
-                        "=",
-                        "==",
-                        "===",
-                        "!="
-                    ],
+                    "options": ["=", "==", "===", "!="],
                     "answer": "==="
                 },
                 {
                     "question": "The operator != means:",
-                    "options": [
-                        "equal",
-                        "greater than",
-                        "not equal",
-                        "identical"
-                    ],
+                    "options": ["equal", "greater than", "not equal", "identical"],
                     "answer": "not equal"
                 },
                 {
                     "question": "Increment operators are used to:",
-                    "options": [
-                        "Increase a variable value",
-                        "Join arrays",
-                        "Compare strings",
-                        "Output results"
-                    ],
+                    "options": ["Increase a variable value", "Join arrays", "Compare strings", "Output results"],
                     "answer": "Increase a variable value"
                 },
                 {
                     "question": "Decrement operators:",
-                    "options": [
-                        "Increase a value",
-                        "Decrease a value",
-                        "Compare values",
-                        "Assign texts"
-                    ],
+                    "options": ["Increase a value", "Decrease a value", "Compare values", "Assign texts"],
                     "answer": "Decrease a value"
                 },
                 {
                     "question": "Logical operators are used to:",
-                    "options": [
-                        "Add numbers",
-                        "Combine conditional statements",
-                        "Reverse strings",
-                        "Create variables"
-                    ],
+                    "options": ["Add numbers", "Combine conditional statements", "Reverse strings", "Create variables"],
                     "answer": "Combine conditional statements"
                 },
                 {
                     "question": "The logical AND operator is:",
-                    "options": [
-                        "||",
-                        "or",
-                        "&&",
-                        "<>"
-                    ],
+                    "options": ["||", "or", "&&", "<>"],
                     "answer": "&&"
                 },
                 {
                     "question": "The logical OR operator is:",
-                    "options": [
-                        "&&",
-                        "||",
-                        "!==",
-                        "=="
-                    ],
+                    "options": ["&&", "||", "!==", "=="],
                     "answer": "||"
                 },
                 {
                     "question": "String operators in PHP include:",
-                    "options": [
-                        "+ and -",
-                        ". and .=",
-                        "&&",
-                        "<>"
-                    ],
+                    "options": ["+ and -", ". and .=", "&&", "<>"],
                     "answer": ". and .="
                 },
                 {
                     "question": "The dot operator . is used for:",
-                    "options": [
-                        "Addition",
-                        "String comparison",
-                        "String concatenation",
-                        "Subtraction"
-                    ],
+                    "options": ["Addition", "String comparison", "String concatenation", "Subtraction"],
                     "answer": "String concatenation"
                 },
                 {
                     "question": "`$txt .= \"world\";` means:",
-                    "options": [
-                        "Replace text",
-                        "Append text",
-                        "Delete text",
-                        "Compare text"
-                    ],
+                    "options": ["Replace text", "Append text", "Delete text", "Compare text"],
                     "answer": "Append text"
                 },
                 {
                     "question": "Array operators are used to:",
-                    "options": [
-                        "Add arrays",
-                        "Compare arrays",
-                        "Print arrays",
-                        "Loop through arrays"
-                    ],
+                    "options": ["Add arrays", "Compare arrays", "Print arrays", "Loop through arrays"],
                     "answer": "Compare arrays"
                 },
                 {
                     "question": "The assignment operator modifies:",
-                    "options": [
-                        "HTML",
-                        "The left operand",
-                        "The function name",
-                        "The class"
-                    ],
+                    "options": ["HTML", "The left operand", "The function name", "The class"],
                     "answer": "The left operand"
                 },
                 {
                     "question": "`++$x` increments:",
-                    "options": [
-                        "After returning the value",
-                        "Before returning the value",
-                        "Does not change value",
-                        "Causes an error"
-                    ],
+                    "options": ["After returning the value", "Before returning the value", "Does not change value", "Causes an error"],
                     "answer": "Before returning the value"
                 },
                 {
                     "question": "`$x++` increments:",
-                    "options": [
-                        "Before returning the value",
-                        "After returning the value",
-                        "Decrements",
-                        "Multiplies"
-                    ],
+                    "options": ["Before returning the value", "After returning the value", "Decrements", "Multiplies"],
                     "answer": "After returning the value"
                 },
                 {
                     "question": "The operator used to check \"greater than\" is:",
-                    "options": [
-                        "<=",
-                        ">=",
-                        ">",
-                        "<"
-                    ],
+                    "options": ["<=", ">=", ">", "<"],
                     "answer": ">"
                 },
                 {
                     "question": "Which operator checks \"less than or equal to\"?",
-                    "options": [
-                        "<=",
-                        ">=",
-                        "<=>",
-                        "!="
-                    ],
+                    "options": ["<=", ">=", "<=>", "!="],
                     "answer": "<="
                 },
                 {
                     "question": "The NOT logical operator is:",
-                    "options": [
-                        "!",
-                        "!=",
-                        "!==",
-                        "<<<"
-                    ],
+                    "options": ["!", "!=", "!==", "<<<"],
                     "answer": "!"
                 },
                 {
                     "question": "In string operations, `\"Hello\" . \"World\"` outputs:",
-                    "options": [
-                        "Hello. World",
-                        "Hello World",
-                        "HelloWorld",
-                        "Error"
-                    ],
+                    "options": ["Hello. World", "Hello World", "HelloWorld", "Error"],
                     "answer": "HelloWorld"
                 },
                 {
                     "question": "The operator that returns TRUE if arrays have the same key/value pairs is:",
-                    "options": [
-                        "+",
-                        "==",
-                        "===",
-                        ">"
-                    ],
+                    "options": ["+", "==", "===", ">"],
                     "answer": "=="
                 },
                 {
                     "question": "The operator that checks identical arrays (same key/value and type) is:",
-                    "options": [
-                        "==",
-                        "!=",
-                        "===",
-                        "<?>"
-                    ],
+                    "options": ["==", "!=", "===", "<?>"],
                     "answer": "==="
                 },
                 {
                     "question": "The operator used to combine arrays is:",
-                    "options": [
-                        "+",
-                        ".",
-                        "&&",
-                        "+="
-                    ],
+                    "options": ["+", ".", "&&", "+="],
                     "answer": "+"
                 },
                 {
                     "question": "Comparison operators return:",
-                    "options": [
-                        "Numbers",
-                        "Strings",
-                        "TRUE or FALSE",
-                        "Objects"
-                    ],
+                    "options": ["Numbers", "Strings", "TRUE or FALSE", "Objects"],
                     "answer": "TRUE or FALSE"
                 },
                 {
                     "question": "Logical operators are often used in:",
-                    "options": [
-                        "Loops",
-                        "Conditions",
-                        "Function names",
-                        "Comments"
-                    ],
+                    "options": ["Loops", "Conditions", "Function names", "Comments"],
                     "answer": "Conditions"
                 },
                 {
                     "question": "Conditional statements allow you to:",
-                    "options": [
-                        "Store data",
-                        "Perform different actions based on conditions",
-                        "Create variables",
-                        "Print arrays"
-                    ],
+                    "options": ["Store data", "Perform different actions based on conditions", "Create variables", "Print arrays"],
                     "answer": "Perform different actions based on conditions"
                 },
                 {
                     "question": "Which PHP statement executes code only if a condition is true?",
-                    "options": [
-                        "switch",
-                        "if",
-                        "for",
-                        "while"
-                    ],
+                    "options": ["switch", "if", "for", "while"],
                     "answer": "if"
                 },
                 {
                     "question": "The if...else statement executes:",
-                    "options": [
-                        "Code only if all conditions are false",
-                        "One block if true, another if false",
-                        "Multiple blocks",
-                        "Infinite loops"
-                    ],
+                    "options": ["Code only if all conditions are false", "One block if true, another if false", "Multiple blocks", "Infinite loops"],
                     "answer": "One block if true, another if false"
                 },
                 {
                     "question": "The if...elseif...else statement can handle:",
-                    "options": [
-                        "One condition only",
-                        "Two conditions only",
-                        "More than two conditions",
-                        "No conditions"
-                    ],
+                    "options": ["One condition only", "Two conditions only", "More than two conditions", "No conditions"],
                     "answer": "More than two conditions"
                 },
                 {
                     "question": "Which statement is used to select one of many blocks of code?",
-                    "options": [
-                        "if",
-                        "for",
-                        "switch",
-                        "foreach"
-                    ],
+                    "options": ["if", "for", "switch", "foreach"],
                     "answer": "switch"
                 },
                 {
                     "question": "In a switch statement, each option must end with:",
-                    "options": [
-                        "stop",
-                        "finish",
-                        "break",
-                        "return"
-                    ],
+                    "options": ["stop", "finish", "break", "return"],
                     "answer": "break"
                 },
                 {
                     "question": "The default block in a switch statement runs when:",
-                    "options": [
-                        "A match is found",
-                        "All cases match",
-                        "No case matches",
-                        "The switch ends"
-                    ],
+                    "options": ["A match is found", "All cases match", "No case matches", "The switch ends"],
                     "answer": "No case matches"
                 },
                 {
                     "question": "What does this condition check? `if ($t < \"20\")`",
-                    "options": [
-                        "If $t equals 20",
-                        "If $t is less than 20",
-                        "If $t is greater than 20",
-                        "If $t is 20 or 30"
-                    ],
+                    "options": ["If $t equals 20", "If $t is less than 20", "If $t is greater than 20", "If $t is 20 or 30"],
                     "answer": "If $t is less than 20"
                 },
                 {
                     "question": "Loops are used to:",
-                    "options": [
-                        "Execute code repeatedly",
-                        "Define functions",
-                        "Stop execution",
-                        "Compare variables"
-                    ],
+                    "options": ["Execute code repeatedly", "Define functions", "Stop execution", "Compare variables"],
                     "answer": "Execute code repeatedly"
                 },
                 {
                     "question": "The while loop runs:",
-                    "options": [
-                        "Exactly once",
-                        "As long as condition is true",
-                        "Regardless of condition",
-                        "A fixed number of times"
-                    ],
+                    "options": ["Exactly once", "As long as condition is true", "Regardless of condition", "A fixed number of times"],
                     "answer": "As long as condition is true"
                 },
                 {
                     "question": "The do...while loop executes:",
-                    "options": [
-                        "Only if condition is true",
-                        "Only if condition is false",
-                        "At least once",
-                        "Never"
-                    ],
+                    "options": ["Only if condition is true", "Only if condition is false", "At least once", "Never"],
                     "answer": "At least once"
                 },
                 {
                     "question": "The for loop is best used when:",
-                    "options": [
-                        "Looping through arrays",
-                        "You know the number of iterations",
-                        "Condition is always false",
-                        "Working with objects"
-                    ],
+                    "options": ["Looping through arrays", "You know the number of iterations", "Condition is always false", "Working with objects"],
                     "answer": "You know the number of iterations"
                 },
                 {
                     "question": "The foreach loop works only on:",
-                    "options": [
-                        "Numbers",
-                        "Strings",
-                        "Arrays",
-                        "Boolean values"
-                    ],
+                    "options": ["Numbers", "Strings", "Arrays", "Boolean values"],
                     "answer": "Arrays"
                 },
                 {
                     "question": "Which loop outputs numbers 1 to 5?",
-                    "options": [
-                        "foreach",
-                        "switch",
-                        "while ($x <= 5)",
-                        "break"
-                    ],
+                    "options": ["foreach", "switch", "while ($x <= 5)", "break"],
                     "answer": "while ($x <= 5)"
                 },
                 {
                     "question": "In the while loop example, `$x++` does what?",
-                    "options": [
-                        "Resets x",
-                        "Increments x by 1",
-                        "Stops the loop",
-                        "Multiplies x"
-                    ],
+                    "options": ["Resets x", "Increments x by 1", "Stops the loop", "Multiplies x"],
                     "answer": "Increments x by 1"
                 },
                 {
                     "question": "The do...while loop checks the condition:",
-                    "options": [
-                        "Before the loop",
-                        "After one execution",
-                        "Never",
-                        "Before and after"
-                    ],
+                    "options": ["Before the loop", "After one execution", "Never", "Before and after"],
                     "answer": "After one execution"
                 },
                 {
                     "question": "In the for loop example, `for($x=0; $x<=5; $x++)` executes:",
-                    "options": [
-                        "6 times",
-                        "5 times",
-                        "10 times",
-                        "Once only"
-                    ],
+                    "options": ["6 times", "5 times", "10 times", "Once only"],
                     "answer": "6 times"
                 },
                 {
                     "question": "`foreach ($colors as $value)` iterates:",
-                    "options": [
-                        "Over the keys only",
-                        "Over the values only",
-                        "Over both key and value",
-                        "Over numbers only"
-                    ],
+                    "options": ["Over the keys only", "Over the values only", "Over both key and value", "Over numbers only"],
                     "answer": "Over the values only"
                 },
                 {
                     "question": "Output of foreach on `[\"red\",\"green\",\"blue\",\"yellow\"]` starts with:",
-                    "options": [
-                        "blue",
-                        "yellow",
-                        "green",
-                        "red"
-                    ],
+                    "options": ["blue", "yellow", "green", "red"],
                     "answer": "red"
                 },
                 {
                     "question": "Which statement handles multiple unrelated conditions more cleanly?",
-                    "options": [
-                        "if",
-                        "if...elseif...else",
-                        "switch",
-                        "while"
-                    ],
+                    "options": ["if", "if...elseif...else", "switch", "while"],
                     "answer": "switch"
                 },
                 {
                     "question": "In if statements, conditions must be:",
-                    "options": [
-                        "Always true",
-                        "Boolean expressions",
-                        "Strings only",
-                        "Variables only"
-                    ],
+                    "options": ["Always true", "Boolean expressions", "Strings only", "Variables only"],
                     "answer": "Boolean expressions"
                 },
                 {
                     "question": "Purpose of break in a switch case:",
-                    "options": [
-                        "Restart the case",
-                        "Prevent execution of other cases",
-                        "End the whole script",
-                        "Repeat the switch"
-                    ],
+                    "options": ["Restart the case", "Prevent execution of other cases", "End the whole script", "Repeat the switch"],
                     "answer": "Prevent execution of other cases"
                 },
                 {
                     "question": "If no break is used in switch:",
-                    "options": [
-                        "Nothing happens",
-                        "All remaining cases run",
-                        "Script stops",
-                        "Variables reset"
-                    ],
+                    "options": ["Nothing happens", "All remaining cases run", "Script stops", "Variables reset"],
                     "answer": "All remaining cases run"
                 },
                 {
                     "question": "The else block executes when:",
-                    "options": [
-                        "Condition is true",
-                        "Condition is false",
-                        "Condition = 0 only",
-                        "switch is used"
-                    ],
+                    "options": ["Condition is true", "Condition is false", "Condition = 0 only", "switch is used"],
                     "answer": "Condition is false"
                 },
                 {
                     "question": "for loop contains how many expressions?",
-                    "options": [
-                        "1",
-                        "2",
-                        "3",
-                        "4"
-                    ],
+                    "options": ["1", "2", "3", "4"],
                     "answer": "3"
                 },
                 {
                     "question": "Which loop guarantees at least one execution?",
-                    "options": [
-                        "for",
-                        "foreach",
-                        "do...while",
-                        "while"
-                    ],
+                    "options": ["for", "foreach", "do...while", "while"],
                     "answer": "do...while"
                 },
                 {
                     "question": "foreach is mainly used for:",
-                    "options": [
-                        "Math calculations",
-                        "String processing",
-                        "Iterating through arrays",
-                        "Conditional checking"
-                    ],
+                    "options": ["Math calculations", "String processing", "Iterating through arrays", "Conditional checking"],
                     "answer": "Iterating through arrays"
                 },
                 {
                     "question": "A loop will run forever if:",
-                    "options": [
-                        "Condition becomes false",
-                        "Condition is never false",
-                        "break is inside",
-                        "Variables are integers"
-                    ],
+                    "options": ["Condition becomes false", "Condition is never false", "break is inside", "Variables are integers"],
                     "answer": "Condition is never false"
                 },
                 {
                     "question": "In PHP, an indexed array created using automatic indexing starts at index:",
-                    "options": [
-                        "1",
-                        "0",
-                        "2",
-                        "-1"
-                    ],
+                    "options": ["1", "0", "2", "-1"],
                     "answer": "0"
                 },
                 {
                     "question": "Which of the following creates an indexed array?",
-                    "options": [
-                        "`$cars = \"Volvo\", \"BMW\";`",
-                        "`$cars = array(\"Volvo\", \"BMW\", \"Toyota\");`",
-                        "`$cars = {\"Volvo\", \"BMW\"};`",
-                        "`$cars = array[\"Volvo\", \"BMW\"];`"
-                    ],
+                    "options": ["`$cars = \"Volvo\", \"BMW\";`", "`$cars = array(\"Volvo\", \"BMW\", \"Toyota\");`", "`$cars = {\"Volvo\", \"BMW\"};`", "`$cars = array[\"Volvo\", \"BMW\"];`"],
                     "answer": "`$cars = array(\"Volvo\", \"BMW\", \"Toyota\");`"
                 },
                 {
                     "question": "To manually assign index numbers, you use:",
-                    "options": [
-                        "`$cars->0 = \"Volvo\";`",
-                        "`$cars(0) = \"Volvo\";`",
-                        "`$cars[0] = \"Volvo\";`",
-                        "`$cars{0} = \"Volvo\";`"
-                    ],
+                    "options": ["`$cars->0 = \"Volvo\";`", "`$cars(0) = \"Volvo\";`", "`$cars[0] = \"Volvo\";`", "`$cars{0} = \"Volvo\";`"],
                     "answer": "`$cars[0] = \"Volvo\";`"
                 },
                 {
                     "question": "The output of `echo $cars[0]` for `array(\"Volvo\", \"BMW\", \"Toyota\")` is:",
-                    "options": [
-                        "BMW",
-                        "Toyota",
-                        "Volvo",
-                        "Error"
-                    ],
+                    "options": ["BMW", "Toyota", "Volvo", "Error"],
                     "answer": "Volvo"
                 },
                 {
                     "question": "The function used to count array elements is:",
-                    "options": [
-                        "length()",
-                        "sizeof()",
-                        "number()",
-                        "count()"
-                    ],
+                    "options": ["length()", "sizeof()", "number()", "count()"],
                     "answer": "count()"
                 },
                 {
                     "question": "`count(array(\"Volvo\", \"BMW\", \"Toyota\"))` returns:",
-                    "options": [
-                        "2",
-                        "3",
-                        "4",
-                        "0"
-                    ],
+                    "options": ["2", "3", "4", "0"],
                     "answer": "3"
                 },
                 {
                     "question": "Associative arrays use:",
-                    "options": [
-                        "Numeric indexes",
-                        "Named keys",
-                        "Floating values",
-                        "Boolean keys"
-                    ],
+                    "options": ["Numeric indexes", "Named keys", "Floating values", "Boolean keys"],
                     "answer": "Named keys"
                 },
                 {
                     "question": "Which is a valid associative array?",
-                    "options": [
-                        "`$age = array(\"Peter\"=>\"35\");`",
-                        "`$age = (\"Peter\"=>\"35\");`",
-                        "`$age = {\"Peter\":35};`",
-                        "`$age[\"Peter\",35];`"
-                    ],
+                    "options": ["`$age = array(\"Peter\"=>\"35\");`", "`$age = (\"Peter\"=>\"35\");`", "`$age = {\"Peter\":35};`", "`$age[\"Peter\",35];`"],
                     "answer": "`$age = array(\"Peter\"=>\"35\");`"
                 },
                 {
                     "question": "To print \"Peter is 35 years old\", we use:",
-                    "options": [
-                        "`$age[Peter]`",
-                        "`$age->Peter`",
-                        "`$age['Peter']`",
-                        "`$age(\"Peter\")`"
-                    ],
+                    "options": ["`$age[Peter]`", "`$age->Peter`", "`$age['Peter']`", "`$age(\"Peter\")`"],
                     "answer": "`$age['Peter']`"
                 },
                 {
                     "question": "The foreach loop used with associative arrays can access:",
-                    "options": [
-                        "Index only",
-                        "Key and value",
-                        "Value only",
-                        "None"
-                    ],
+                    "options": ["Index only", "Key and value", "Value only", "None"],
                     "answer": "Key and value"
                 },
                 {
                     "question": "Output of this loop: `foreach($age as $x => $x_value)`",
-                    "options": [
-                        "Only keys",
-                        "Only values",
-                        "Keys and values",
-                        "Neither"
-                    ],
+                    "options": ["Only keys", "Only values", "Keys and values", "Neither"],
                     "answer": "Keys and values"
                 },
                 {
                     "question": "Which sorting function sorts indexed arrays in ascending order?",
-                    "options": [
-                        "rsort()",
-                        "sort()",
-                        "asort()",
-                        "ksort()"
-                    ],
+                    "options": ["rsort()", "sort()", "asort()", "ksort()"],
                     "answer": "sort()"
                 },
                 {
                     "question": "rsort() sorts arrays in:",
-                    "options": [
-                        "Random order",
-                        "Alphabetical order ascending",
-                        "Descending order",
-                        "By key"
-                    ],
+                    "options": ["Random order", "Alphabetical order ascending", "Descending order", "By key"],
                     "answer": "Descending order"
                 },
                 {
                     "question": "Which function sorts associative arrays by value in ascending order?",
-                    "options": [
-                        "arsort()",
-                        "sort()",
-                        "ksort()",
-                        "asort()"
-                    ],
+                    "options": ["arsort()", "sort()", "ksort()", "asort()"],
                     "answer": "asort()"
                 },
                 {
                     "question": "Which sorts an associative array by keys in ascending order?",
-                    "options": [
-                        "ksort()",
-                        "asort()",
-                        "sort()",
-                        "krsort()"
-                    ],
+                    "options": ["ksort()", "asort()", "sort()", "krsort()"],
                     "answer": "ksort()"
                 },
                 {
                     "question": "Which function sorts associative arrays by value in descending order?",
-                    "options": [
-                        "asort()",
-                        "sort()",
-                        "arsort()",
-                        "krsort()"
-                    ],
+                    "options": ["asort()", "sort()", "arsort()", "krsort()"],
                     "answer": "arsort()"
                 },
                 {
                     "question": "Which function sorts associative arrays by key in descending order?",
-                    "options": [
-                        "ksort()",
-                        "rsort()",
-                        "asort()",
-                        "krsort()"
-                    ],
+                    "options": ["ksort()", "rsort()", "asort()", "krsort()"],
                     "answer": "krsort()"
                 },
                 {
                     "question": "Sorting `array(\"Volvo\", \"BMW\",\"Toyota\")` with sort() produces:",
-                    "options": [
-                        "Volvo, BMW, Toyota",
-                        "BMW, Toyota, Volvo",
-                        "Toyota, Volvo, BMW",
-                        "Error"
-                    ],
+                    "options": ["Volvo, BMW, Toyota", "BMW, Toyota, Volvo", "Toyota, Volvo, BMW", "Error"],
                     "answer": "BMW, Toyota, Volvo"
                 },
                 {
                     "question": "After sorting [4,6,2,22,11], the output begins with:",
-                    "options": [
-                        "6",
-                        "22",
-                        "2",
-                        "11"
-                    ],
+                    "options": ["6", "22", "2", "11"],
                     "answer": "2"
                 },
                 {
                     "question": "Which loop is most commonly used to iterate through arrays?",
-                    "options": [
-                        "while",
-                        "do...while",
-                        "switch",
-                        "foreach"
-                    ],
+                    "options": ["while", "do...while", "switch", "foreach"],
                     "answer": "foreach"
                 },
                 {
                     "question": "Accessing `$cars[2]` gives:",
-                    "options": [
-                        "The third element",
-                        "The second element",
-                        "The first element",
-                        "Error"
-                    ],
+                    "options": ["The third element", "The second element", "The first element", "Error"],
                     "answer": "The third element"
                 },
                 {
                     "question": "Associative arrays allow you to:",
-                    "options": [
-                        "Use number-only indexes",
-                        "Use custom string keys",
-                        "Use random types as indexes",
-                        "Store only numbers"
-                    ],
+                    "options": ["Use number-only indexes", "Use custom string keys", "Use random types as indexes", "Store only numbers"],
                     "answer": "Use custom string keys"
                 },
                 {
                     "question": "In `foreach ($age as $x => $x_value)`, `$x` refers to:",
-                    "options": [
-                        "The array length",
-                        "The key",
-                        "The value",
-                        "Undefined"
-                    ],
+                    "options": ["The array length", "The key", "The value", "Undefined"],
                     "answer": "The key"
                 },
                 {
                     "question": "In the same loop, `$x_value` refers to:",
-                    "options": [
-                        "The key",
-                        "The value",
-                        "The index",
-                        "Nothing"
-                    ],
+                    "options": ["The key", "The value", "The index", "Nothing"],
                     "answer": "The value"
                 },
                 {
                     "question": "Which function will sort keys alphabetically A-Z?",
-                    "options": [
-                        "arsort()",
-                        "sort()",
-                        "ksort()",
-                        "rsort()"
-                    ],
+                    "options": ["arsort()", "sort()", "ksort()", "rsort()"],
                     "answer": "ksort()"
                 },
                 {
                     "question": "Which function will produce: Joe, Ben, Peter (value descending)?",
-                    "options": [
-                        "asort()",
-                        "ksort()",
-                        "arsort()",
-                        "sort()"
-                    ],
+                    "options": ["asort()", "ksort()", "arsort()", "sort()"],
                     "answer": "arsort()"
                 },
                 {
                     "question": "Sorting by key descending is done with:",
-                    "options": [
-                        "ksort()",
-                        "krsort()",
-                        "ksort()",
-                        "arsort()"
-                    ],
+                    "options": ["ksort()", "krsort()", "ksort()", "arsort()"],
                     "answer": "krsort()"
                 },
                 {
                     "question": "What is the output order of keys after ksort() for: Peter, Ben, Joe",
-                    "options": [
-                        "Peter, Ben, Joe",
-                        "Ben, Joe, Peter",
-                        "Joe, Ben, Peter",
-                        "Alphabetical reverse"
-                    ],
+                    "options": ["Peter, Ben, Joe", "Ben, Joe, Peter", "Joe, Ben, Peter", "Alphabetical reverse"],
                     "answer": "Ben, Joe, Peter"
                 },
                 {
                     "question": "`array(\"Volvo\", \"BMW\", \"Toyota\")` contains how many elements?",
-                    "options": [
-                        "1",
-                        "2",
-                        "3",
-                        "4"
-                    ],
+                    "options": ["1", "2", "3", "4"],
                     "answer": "3"
                 },
                 {
                     "question": "Which sorting method is used in the example to sort cars alphabetically?",
-                    "options": [
-                        "arsort()",
-                        "sort()",
-                        "ksort()",
-                        "asort()"
-                    ],
+                    "options": ["arsort()", "sort()", "ksort()", "asort()"],
                     "answer": "sort()"
                 },
                 {
                     "question": "The real power of PHP comes from its:",
-                    "options": [
-                        "Loops",
-                        "Variables",
-                        "Functions",
-                        "Arrays"
-                    ],
+                    "options": ["Loops", "Variables", "Functions", "Arrays"],
                     "answer": "Functions"
                 },
                 {
                     "question": "PHP has more than ________ built-in functions.",
-                    "options": [
-                        "100",
-                        "300",
-                        "1000",
-                        "10"
-                    ],
+                    "options": ["100", "300", "1000", "10"],
                     "answer": "1000"
                 },
                 {
                     "question": "A user-defined function in PHP starts with the keyword:",
-                    "options": [
-                        "method",
-                        "function",
-                        "define",
-                        "return"
-                    ],
+                    "options": ["method", "function", "define", "return"],
                     "answer": "function"
                 },
                 {
                     "question": "A function will execute:",
-                    "options": [
-                        "Automatically when the page loads",
-                        "Only when called",
-                        "When PHP ends",
-                        "On browser refresh"
-                    ],
+                    "options": ["Automatically when the page loads", "Only when called", "When PHP ends", "On browser refresh"],
                     "answer": "Only when called"
                 },
                 {
                     "question": "Function names in PHP are:",
-                    "options": [
-                        "Always uppercase",
-                        "Always lowercase",
-                        "Case-sensitive",
-                        "Not case-sensitive"
-                    ],
+                    "options": ["Always uppercase", "Always lowercase", "Case-sensitive", "Not case-sensitive"],
                     "answer": "Not case-sensitive"
                 },
                 {
                     "question": "Which example correctly defines a function?",
-                    "options": [
-                        "define write(){}",
-                        "function writeMsg() {}",
-                        "fun write() {}",
-                        "create write(){}"
-                    ],
+                    "options": ["define write(){}", "function writeMsg() {}", "fun write() {}", "create write(){}"],
                     "answer": "function writeMsg() {}"
                 },
                 {
                     "question": "A function argument is:",
-                    "options": [
-                        "A loop",
-                        "A condition",
-                        "A variable passed into a function",
-                        "A return value"
-                    ],
+                    "options": ["A loop", "A condition", "A variable passed into a function", "A return value"],
                     "answer": "A variable passed into a function"
                 },
                 {
                     "question": "How do you pass an argument?",
-                    "options": [
-                        "functionName[arg]",
-                        "functionName(arg)",
-                        "functionName{arg}",
-                        "functionName->arg"
-                    ],
+                    "options": ["functionName[arg]", "functionName(arg)", "functionName{arg}", "functionName->arg"],
                     "answer": "functionName(arg)"
                 },
                 {
                     "question": "In the example `familyName(\"Jani\")`, \"Jani\" is:",
-                    "options": [
-                        "A function",
-                        "A default value",
-                        "An argument",
-                        "A return"
-                    ],
+                    "options": ["A function", "A default value", "An argument", "A return"],
                     "answer": "An argument"
                 },
                 {
                     "question": "Default argument values are placed:",
-                    "options": [
-                        "Outside the function",
-                        "Before the function",
-                        "Inside parentheses during definition",
-                        "After return"
-                    ],
+                    "options": ["Outside the function", "Before the function", "Inside parentheses during definition", "After return"],
                     "answer": "Inside parentheses during definition"
                 },
                 {
                     "question": "If a function parameter has a default value and no value is passed:",
-                    "options": [
-                        "Error occurs",
-                        "Null is used",
-                        "The default value is used",
-                        "Zero is used"
-                    ],
+                    "options": ["Error occurs", "Null is used", "The default value is used", "Zero is used"],
                     "answer": "The default value is used"
                 },
                 {
                     "question": "In the example, setHeight() with no argument outputs:",
-                    "options": [
-                        "0",
-                        "Undefined",
-                        "50",
-                        "Error"
-                    ],
+                    "options": ["0", "Undefined", "50", "Error"],
                     "answer": "50"
                 },
                 {
                     "question": "To return a value from a function, we use:",
-                    "options": [
-                        "exit",
-                        "stop",
-                        "return",
-                        "output"
-                    ],
+                    "options": ["exit", "stop", "return", "output"],
                     "answer": "return"
                 },
                 {
                     "question": "In the sum function, `sum(5,10)` returns:",
-                    "options": [
-                        "10",
-                        "5",
-                        "15",
-                        "20"
-                    ],
+                    "options": ["10", "5", "15", "20"],
                     "answer": "15"
                 },
                 {
                     "question": "A return statement:",
-                    "options": [
-                        "Prints text",
-                        "Ends the function and sends back a value",
-                        "Loops code",
-                        "Deletes variables"
-                    ],
+                    "options": ["Prints text", "Ends the function and sends back a value", "Loops code", "Deletes variables"],
                     "answer": "Ends the function and sends back a value"
                 },
                 {
                     "question": "A function with two arguments looks like:",
-                    "options": [
-                        "function test[$a,$b]",
-                        "function test($a,$b)",
-                        "function test{$a,$b}",
-                        "function test: $a,$b"
-                    ],
+                    "options": ["function test[$a,$b]", "function test($a,$b)", "function test{$a,$b}", "function test: $a,$b"],
                     "answer": "function test($a,$b)"
                 },
                 {
                     "question": "The output of: `echo \"2 + 4 = \" . sum(2,4)` is:",
-                    "options": [
-                        "2 + 4 = 4",
-                        "2 + 4 = 2",
-                        "2 + 4 = 8",
-                        "2 + 4 = 6"
-                    ],
+                    "options": ["2 + 4 = 4", "2 + 4 = 2", "2 + 4 = 8", "2 + 4 = 6"],
                     "answer": "2 + 4 = 6"
                 },
                 {
                     "question": "A function without arguments can:",
-                    "options": [
-                        "Never run",
-                        "Still be called and executed",
-                        "Only return values",
-                        "Only run once"
-                    ],
+                    "options": ["Never run", "Still be called and executed", "Only return values", "Only run once"],
                     "answer": "Still be called and executed"
                 },
                 {
                     "question": "Arguments in PHP functions are separated by:",
-                    "options": [
-                        "semicolons",
-                        "spaces",
-                        "commas",
-                        "slashes"
-                    ],
+                    "options": ["semicolons", "spaces", "commas", "slashes"],
                     "answer": "commas"
                 },
                 {
                     "question": "The purpose of user-defined functions is to:",
-                    "options": [
-                        "Make variables",
-                        "Avoid repeating code",
-                        "Control HTML",
-                        "Replace built-in functions"
-                    ],
+                    "options": ["Make variables", "Avoid repeating code", "Control HTML", "Replace built-in functions"],
                     "answer": "Avoid repeating code"
                 },
                 {
                     "question": "What are cookies mainly used for?",
-                    "options": [
-                        "Server storage",
-                        "Client-side tracking",
-                        "Database backup",
-                        "File encryption"
-                    ],
+                    "options": ["Server storage", "Client-side tracking", "Database backup", "File encryption"],
                     "answer": "Client-side tracking"
                 },
                 {
                     "question": "Where are cookies stored?",
-                    "options": [
-                        "Server",
-                        "Database",
-                        "Client computer",
-                        "PHP session file"
-                    ],
+                    "options": ["Server", "Database", "Client computer", "PHP session file"],
                     "answer": "Client computer"
                 },
                 {
                     "question": "PHP cookies are sent through which protocol header?",
-                    "options": [
-                        "GET",
-                        "POST",
-                        "HTTP",
-                        "FTP"
-                    ],
+                    "options": ["GET", "POST", "HTTP", "FTP"],
                     "answer": "HTTP"
                 },
                 {
                     "question": "Which header is used to send cookies to the browser?",
-                    "options": [
-                        "Cookie",
-                        "Set-Cookie",
-                        "Accept",
-                        "Content-Type"
-                    ],
+                    "options": ["Cookie", "Set-Cookie", "Accept", "Content-Type"],
                     "answer": "Set-Cookie"
                 },
                 {
                     "question": "Which function is used to create a cookie in PHP?",
-                    "options": [
-                        "createcookie()",
-                        "addcookie()",
-                        "setcookie()",
-                        "makecookie()"
-                    ],
+                    "options": ["createcookie()", "addcookie()", "setcookie()", "makecookie()"],
                     "answer": "setcookie()"
                 },
                 {
                     "question": "Cookies are stored until when?",
-                    "options": [
-                        "Server restart",
-                        "Browser restart",
-                        "Expiry date",
-                        "PHP execution ends"
-                    ],
+                    "options": ["Server restart", "Browser restart", "Expiry date", "PHP execution ends"],
                     "answer": "Expiry date"
                 },
                 {
                     "question": "What does the \"expires\" attribute define?",
-                    "options": [
-                        "Cookie name",
-                        "Cookie path",
-                        "Cookie lifetime",
-                        "Cookie security"
-                    ],
+                    "options": ["Cookie name", "Cookie path", "Cookie lifetime", "Cookie security"],
                     "answer": "Cookie lifetime"
                 },
                 {
                     "question": "Cookies are automatically URL encoded for which values?",
-                    "options": [
-                        "Path",
-                        "Domain",
-                        "Name and value",
-                        "Expiry"
-                    ],
+                    "options": ["Path", "Domain", "Name and value", "Expiry"],
                     "answer": "Name and value"
                 },
                 {
                     "question": "Which variable stores cookies in PHP?",
-                    "options": [
-                        "$_SESSION",
-                        "$_SERVER",
-                        "$_COOKIE",
-                        "$_REQUEST"
-                    ],
+                    "options": ["$_SESSION", "$_SERVER", "$_COOKIE", "$_REQUEST"],
                     "answer": "$_COOKIE"
                 },
                 {
                     "question": "Which variable is equivalent to $_COOKIE?",
-                    "options": [
-                        "$HTTP_SESSION_VARS",
-                        "$HTTP_COOKIE_VARS",
-                        "$HTTP_SERVER_VARS",
-                        "$HTTP_ENV_VARS"
-                    ],
+                    "options": ["$HTTP_SESSION_VARS", "$HTTP_COOKIE_VARS", "$HTTP_SERVER_VARS", "$HTTP_ENV_VARS"],
                     "answer": "$HTTP_COOKIE_VARS"
                 },
                 {
                     "question": "Cookies must be set before which tag?",
-                    "options": [
-                        "<html>",
-                        "<head>",
-                        "<body>",
-                        "<title>"
-                    ],
+                    "options": ["<html>", "<head>", "<body>", "<title>"],
                     "answer": "<html>"
                 },
                 {
                     "question": "How many arguments can setcookie() accept?",
-                    "options": [
-                        "3",
-                        "4",
-                        "5",
-                        "6"
-                    ],
+                    "options": ["3", "4", "5", "6"],
                     "answer": "6"
                 },
                 {
                     "question": "What happens if the expiry time is not set?",
-                    "options": [
-                        "Cookie is permanent",
-                        "Cookie expires immediately",
-                        "Cookie expires when browser closes",
-                        "Cookie expires in 24 hours"
-                    ],
+                    "options": ["Cookie is permanent", "Cookie expires immediately", "Cookie expires when browser closes", "Cookie expires in 24 hours"],
                     "answer": "Cookie expires when browser closes"
                 },
                 {
                     "question": "Which value allows cookies for all directories?",
-                    "options": [
-                        "*",
-                        "/",
-                        "root",
-                        "all"
-                    ],
+                    "options": ["*", "/", "root", "all"],
                     "answer": "/"
                 },
                 {
                     "question": "Cookies are valid for which domain?",
-                    "options": [
-                        "Any domain",
-                        "Parent domain only",
-                        "Domain that created them",
-                        "All subdomains automatically"
-                    ],
+                    "options": ["Any domain", "Parent domain only", "Domain that created them", "All subdomains automatically"],
                     "answer": "Domain that created them"
                 },
                 {
                     "question": "Which security value restricts cookies to HTTPS?",
-                    "options": [
-                        "0",
-                        "1",
-                        "true",
-                        "secure"
-                    ],
+                    "options": ["0", "1", "true", "secure"],
                     "answer": "secure"
                 },
                 {
                     "question": "How are cookies deleted safely?",
-                    "options": [
-                        "unset()",
-                        "session_destroy()",
-                        "setcookie() with past expiry",
-                        "deletecookie()"
-                    ],
+                    "options": ["unset()", "session_destroy()", "setcookie() with past expiry", "deletecookie()"],
                     "answer": "setcookie() with past expiry"
                 },
                 {
                     "question": "What happens when a browser revisits a site?",
-                    "options": [
-                        "Cookies are deleted",
-                        "Cookies are resent to server",
-                        "Cookies are encrypted",
-                        "Cookies are ignored"
-                    ],
+                    "options": ["Cookies are deleted", "Cookies are resent to server", "Cookies are encrypted", "Cookies are ignored"],
                     "answer": "Cookies are resent to server"
                 },
                 {
                     "question": "Which HTTP method shows cookies sent back?",
-                    "options": [
-                        "POST",
-                        "PUT",
-                        "GET",
-                        "DELETE"
-                    ],
+                    "options": ["POST", "PUT", "GET", "DELETE"],
                     "answer": "GET"
                 },
                 {
                     "question": "Which superglobal checks if a cookie exists?",
-                    "options": [
-                        "empty()",
-                        "isset()",
-                        "check()",
-                        "verify()"
-                    ],
+                    "options": ["empty()", "isset()", "check()", "verify()"],
                     "answer": "isset()"
                 },
                 {
                     "question": "Where are session variables stored?",
-                    "options": [
-                        "Client computer",
-                        "Database",
-                        "Server temporary directory",
-                        "Browser cache"
-                    ],
+                    "options": ["Client computer", "Database", "Server temporary directory", "Browser cache"],
                     "answer": "Server temporary directory"
                 },
                 {
                     "question": "What uniquely identifies a session?",
-                    "options": [
-                        "Cookie name",
-                        "PHPSESSID",
-                        "Session variable",
-                        "Browser ID"
-                    ],
+                    "options": ["Cookie name", "PHPSESSID", "Session variable", "Browser ID"],
                     "answer": "PHPSESSID"
                 },
                 {
                     "question": "Session ID length is typically:",
-                    "options": [
-                        "16 characters",
-                        "24 characters",
-                        "32 hexadecimal characters",
-                        "64 characters"
-                    ],
+                    "options": ["16 characters", "24 characters", "32 hexadecimal characters", "64 characters"],
                     "answer": "32 hexadecimal characters"
                 },
                 {
                     "question": "Session files are prefixed with:",
-                    "options": [
-                        "session_",
-                        "php_",
-                        "sess_",
-                        "tmp_"
-                    ],
+                    "options": ["session_", "php_", "sess_", "tmp_"],
                     "answer": "sess_"
                 },
                 {
                     "question": "Which cookie stores the session ID?",
-                    "options": [
-                        "SESSIONID",
-                        "PHPSESSION",
-                        "PHPSESSID",
-                        "PHPCOOKIE"
-                    ],
+                    "options": ["SESSIONID", "PHPSESSION", "PHPSESSID", "PHPCOOKIE"],
                     "answer": "PHPSESSID"
                 },
                 {
                     "question": "Which function starts a session?",
-                    "options": [
-                        "start_session()",
-                        "begin_session()",
-                        "session_start()",
-                        "init_session()"
-                    ],
+                    "options": ["start_session()", "begin_session()", "session_start()", "init_session()"],
                     "answer": "session_start()"
                 },
                 {
                     "question": "Where should session_start() be placed?",
-                    "options": [
-                        "End of page",
-                        "Before HTML output",
-                        "Inside body",
-                        "Inside footer"
-                    ],
+                    "options": ["End of page", "Before HTML output", "Inside body", "Inside footer"],
                     "answer": "Before HTML output"
                 },
                 {
                     "question": "Session variables are stored in:",
-                    "options": [
-                        "$_COOKIE",
-                        "$_SESSION",
-                        "$_SERVER",
-                        "$_GLOBAL"
-                    ],
+                    "options": ["$_COOKIE", "$_SESSION", "$_SERVER", "$_GLOBAL"],
                     "answer": "$_SESSION"
                 },
                 {
                     "question": "Which function ends a session completely?",
-                    "options": [
-                        "unset()",
-                        "destroy()",
-                        "session_destroy()",
-                        "session_end()"
-                    ],
+                    "options": ["unset()", "destroy()", "session_destroy()", "session_end()"],
                     "answer": "session_destroy()"
                 },
                 {
                     "question": "How long does a session usually last by default?",
-                    "options": [
-                        "5 minutes",
-                        "15 minutes",
-                        "30 minutes",
-                        "60 minutes"
-                    ],
+                    "options": ["5 minutes", "15 minutes", "30 minutes", "60 minutes"],
                     "answer": "30 minutes"
                 },
                 {
                     "question": "Which function removes a single session variable?",
-                    "options": [
-                        "delete()",
-                        "unset()",
-                        "remove()",
-                        "clear()"
-                    ],
+                    "options": ["delete()", "unset()", "remove()", "clear()"],
                     "answer": "unset()"
                 },
                 {
                     "question": "Sessions are best used for:",
-                    "options": [
-                        "Long-term storage",
-                        "Permanent data",
-                        "Temporary user data",
-                        "Client-side data"
-                    ],
+                    "options": ["Long-term storage", "Permanent data", "Temporary user data", "Client-side data"],
                     "answer": "Temporary user data"
                 },
                 {
                     "question": "Session validation compares:",
-                    "options": [
-                        "Cookie value and server file",
-                        "Database and cookie",
-                        "Browser and server IP",
-                        "User and password"
-                    ],
+                    "options": ["Cookie value and server file", "Database and cookie", "Browser and server IP", "User and password"],
                     "answer": "Cookie value and server file"
                 },
                 {
                     "question": "Session data is destroyed when:",
-                    "options": [
-                        "Browser closes",
-                        "User logs out",
-                        "Server timeout",
-                        "All of the above"
-                    ],
+                    "options": ["Browser closes", "User logs out", "Server timeout", "All of the above"],
                     "answer": "All of the above"
                 },
                 {
                     "question": "Sessions are safer than cookies because they are stored:",
-                    "options": [
-                        "In browser",
-                        "On client",
-                        "On server",
-                        "In cache"
-                    ],
+                    "options": ["In browser", "On client", "On server", "In cache"],
                     "answer": "On server"
                 },
                 {
                     "question": "Session variables persist until:",
-                    "options": [
-                        "Browser restart",
-                        "Script execution ends",
-                        "Session ends",
-                        "Page refresh"
-                    ],
+                    "options": ["Browser restart", "Script execution ends", "Session ends", "Page refresh"],
                     "answer": "Session ends"
                 },
                 {
                     "question": "Cookies can be accessed using:",
-                    "options": [
-                        "$_SESSION",
-                        "$_COOKIE",
-                        "$_FILES",
-                        "$_POST"
-                    ],
+                    "options": ["$_SESSION", "$_COOKIE", "$_FILES", "$_POST"],
                     "answer": "$_COOKIE"
                 },
                 {
                     "question": "Cookies are mainly used to:",
-                    "options": [
-                        "Store passwords",
-                        "Identify returning users",
-                        "Encrypt data",
-                        "Upload files"
-                    ],
+                    "options": ["Store passwords", "Identify returning users", "Encrypt data", "Upload files"],
                     "answer": "Identify returning users"
                 },
                 {
                     "question": "What does isset() check?",
-                    "options": [
-                        "Value",
-                        "Type",
-                        "Existence",
-                        "Format"
-                    ],
+                    "options": ["Value", "Type", "Existence", "Format"],
                     "answer": "Existence"
                 },
                 {
                     "question": "Cookies are sent back to the server via:",
-                    "options": [
-                        "HTTP headers",
-                        "PHP code",
-                        "JavaScript",
-                        "Database"
-                    ],
+                    "options": ["HTTP headers", "PHP code", "JavaScript", "Database"],
                     "answer": "HTTP headers"
                 },
                 {
                     "question": "Sessions require cookies to:",
-                    "options": [
-                        "Store values",
-                        "Save files",
-                        "Identify session",
-                        "Encrypt data"
-                    ],
+                    "options": ["Store values", "Save files", "Identify session", "Encrypt data"],
                     "answer": "Identify session"
                 },
                 {
                     "question": "Which is client-side storage?",
-                    "options": [
-                        "Session",
-                        "Cookie",
-                        "Database",
-                        "Server file"
-                    ],
+                    "options": ["Session", "Cookie", "Database", "Server file"],
                     "answer": "Cookie"
                 },
                 {
                     "question": "Which is server-side storage?",
-                    "options": [
-                        "Cookie",
-                        "Cache",
-                        "Session",
-                        "Browser storage"
-                    ],
+                    "options": ["Cookie", "Cache", "Session", "Browser storage"],
                     "answer": "Session"
                 },
                 {
                     "question": "PHP sessions use which superglobal?",
-                    "options": [
-                        "$_SERVER",
-                        "$_COOKIE",
-                        "$_SESSION",
-                        "$_ENV"
-                    ],
+                    "options": ["$_SERVER", "$_COOKIE", "$_SESSION", "$_ENV"],
                     "answer": "$_SESSION"
                 },
                 {
                     "question": "Session ID is stored in:",
-                    "options": [
-                        "Server only",
-                        "Database",
-                        "Cookie",
-                        "HTML"
-                    ],
+                    "options": ["Server only", "Database", "Cookie", "HTML"],
                     "answer": "Cookie"
                 },
                 {
                     "question": "Which function increments session counter?",
-                    "options": [
-                        "add()",
-                        "count()",
-                        "++ operator",
-                        "session_add()"
-                    ],
+                    "options": ["add()", "count()", "++ operator", "session_add()"],
                     "answer": "++ operator"
                 },
                 {
                     "question": "Cookies are best for:",
-                    "options": [
-                        "Sensitive data",
-                        "Large data",
-                        "Small user preferences",
-                        "File uploads"
-                    ],
+                    "options": ["Sensitive data", "Large data", "Small user preferences", "File uploads"],
                     "answer": "Small user preferences"
                 },
                 {
                     "question": "Sessions are destroyed using:",
-                    "options": [
-                        "unset()",
-                        "delete()",
-                        "session_destroy()",
-                        "end_session()"
-                    ],
+                    "options": ["unset()", "delete()", "session_destroy()", "end_session()"],
                     "answer": "session_destroy()"
                 },
                 {
                     "question": "Cookies are limited by:",
-                    "options": [
-                        "Server RAM",
-                        "Browser settings",
-                        "PHP version",
-                        "Database size"
-                    ],
+                    "options": ["Server RAM", "Browser settings", "PHP version", "Database size"],
                     "answer": "Browser settings"
                 },
                 {
                     "question": "Which is more secure?",
-                    "options": [
-                        "Cookies",
-                        "Sessions",
-                        "Both equal",
-                        "Depends on browser"
-                    ],
+                    "options": ["Cookies", "Sessions", "Both equal", "Depends on browser"],
                     "answer": "Sessions"
                 },
                 {
