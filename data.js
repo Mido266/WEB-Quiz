@@ -329,12 +329,12 @@ const quizData = [
             {
                 "question": "What is the correct syntax for adding a comment in HTML?",
                 "options": [
-                    "",
+                    "<-- This is a comment --> ",
                     "<## This is a comment ##>",
                     "// This is a comment",
                     "<** This is a comment **>"
                 ],
-                "answer": ""
+                "answer": "<-- This is a comment --> "
             },
             {
                 "question": "Do you remember any legal HTML color names? Which one of the following is a legal HTML color?",
@@ -508,8 +508,8 @@ const quizData = [
             },
             {
                 "question": "In HTML, the correct way of commenting out something would be using _________.",
-                "options": ["## and ##", "", "// and //", "dl-- and --dl"],
-                "answer": ""
+                "options": ["## and ##", " <!-- and --»", "/- and -/", "<!-- and --!>"],
+                "answer": " <!-- and --»"
             },
             {
                 "question": "How does the <bdo> element work?",
@@ -3407,7 +3407,7 @@ const quizData = [
                 {
                     "question": "How do you write a comment in JavaScript?",
                     "options": [
-                        "",
+                        "<!-- This is a comment -->",
                         "// This is a comment",
                         "/* This is a comment */",
                         "-- This is a comment"
