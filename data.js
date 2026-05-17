@@ -304,12 +304,12 @@ const quizData = [
             {
                 "question": "What is a correct way to add a background color to an HTML document?",
                 "options": [
-                    "<body style='background:pink;'>",
+                    "<body style='background-color:pink;'>",
                     "<body background-color='pink;'>",
                     "<body style='bgcolor:pink;'>",
                     "None of the above"
                 ],
-                "answer": "<body style='background:pink;'>"
+                "answer": "<body style='background-color:pink;'>"
             },
             {
                 "question": "Two of the following HTML elements make the text bold, which two?",
