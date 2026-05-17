@@ -1,20 +1,20 @@
-    // App State
-    let currentCategory = null;
-    let currentQuestions = [];
-    let currentQuestionIndex = 0;
-    let score = { correct: 0, wrong: 0 };
-    let timerInterval = null;
-    let secondsElapsed = 0;
-    let totalUserXP = 1250; // Mock initial XP
+// App State
+let currentCategory = null;
+let currentQuestions = [];
+let currentQuestionIndex = 0;
+let score = { correct: 0, wrong: 0 };
+let timerInterval = null;
+let secondsElapsed = 0;
+let totalUserXP = 1250; // Mock initial XP
 
-    // DOM Elements
-    const views = {
+// DOM Elements
+const views = {
     home: document.getElementById("home-view"),
     quiz: document.getElementById("quiz-view"),
     result: document.getElementById("result-view"),
-    };
+};
 
-    const elements = {
+const elements = {
     categoriesContainer: document.getElementById("categories-container"),
     totalQuestionsStat: document.getElementById("total-questions-stat"),
     overallProgressText: document.getElementById("overall-progress-text"),
@@ -43,35 +43,38 @@
     finalAccuracy: document.getElementById("final-accuracy"),
     finalXp: document.getElementById("final-xp"),
     btnHome: document.getElementById("btn-home"),
-    };
+};
 
-    const CATEGORY_ICONS = [
+const CATEGORY_ICONS = [
     "🌐", // Intro
     "📄", // HTML
     "🎨", // CSS
     "⚡", // JS
     "🐘", // PHP
-    ];
+];
 
-    // Initialize App
-    function init() {
+// Initialize App
+function init() {
     renderCategories();
     setupEventListeners();
     updateMainProgressRing(15); // Mock 15% overall progress
 
-    // Mouse tracking for category card glow effect
-    document.getElementById("categories-container").onmousemove = (e) => {
-        for (const card of document.getElementsByClassName("category-card")) {
-        const rect = card.getBoundingClientRect(),
-            x = e.clientX - rect.left,
-            y = e.clientY - rect.top;
-        card.style.setProperty("--mouse-x", `${x}px`);
-        card.style.setProperty("--mouse-y", `${y}px`);
-        }
-    };
+    // Mouse tracking for category card glow effect (تم إصلاح الإيرور هنا تماماً)
+    const catContainer = document.getElementById("categories-container");
+    if (catContainer) {
+        catContainer.onmousemove = (e) => {
+            for (const card of document.getElementsByClassName("category-card")) {
+                const rect = card.getBoundingClientRect(),
+                    x = e.clientX - rect.left,
+                    y = e.clientY - rect.top;
+                card.style.setProperty("--mouse-x", `${x}px`);
+                card.style.setProperty("--mouse-y", `${y}px`);
+            }
+        };
     }
+}
 
-    function switchView(viewName) {
+function switchView(viewName) {
     Object.values(views).forEach((v) => {
         v.classList.remove("active");
         v.style.display = "none";
@@ -90,23 +93,23 @@
         viewName === "home" ? "flex" : "none";
     }
 
-    function formatTime(seconds) {
+function formatTime(seconds) {
     const m = Math.floor(seconds / 60)
         .toString()
         .padStart(2, "0");
     const s = (seconds % 60).toString().padStart(2, "0");
     return `${m}:${s}`;
-    }
+}
 
-    function updateMainProgressRing(percent) {
+function updateMainProgressRing(percent) {
     const circumference = 213; // 2 * pi * 34
     const offset = circumference - (percent / 100) * circumference;
     elements.mainProgressRing.style.strokeDashoffset = offset;
     elements.overallProgressText.textContent = `${percent}%`;
-    }
+}
 
-    // Home View Logic
-    function renderCategories() {
+// Home View Logic
+function renderCategories() {
     elements.categoriesContainer.innerHTML = "";
     let totalQ = 0;
 
@@ -131,10 +134,10 @@
     });
 
     elements.totalQuestionsStat.textContent = `${totalQ} Questions Total`;
-    }
+}
 
-    // Quiz Logic
-    function startQuiz(categoryIndex) {
+// Quiz Logic
+function startQuiz(categoryIndex) {
     currentCategory = quizData[categoryIndex];
     currentQuestions = [...currentCategory.questions].sort(
         () => Math.random() - 0.5,
@@ -154,9 +157,9 @@
 
     switchView("quiz");
     loadQuestion();
-    }
+}
 
-    function loadQuestion() {
+function loadQuestion() {
     const q = currentQuestions[currentQuestionIndex];
 
     // Update Progress Bar
@@ -191,29 +194,37 @@
         btn.style.transition = "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
 
         setTimeout(
-        () => {
-            btn.style.opacity = "1";
-            btn.style.transform = "translateY(0)";
-        },
-        100 + idx * 50,
+            () => {
+                btn.style.opacity = "1";
+                btn.style.transform = "translateY(0)";
+            },
+            100 + idx * 50,
         );
 
         const label = String.fromCharCode(65 + idx);
-        btn.innerHTML = `
-                <div class="opt-letter">${label}</div>
-                <span class="opt-text">${opt}</span>
-            `;
+
+        // بناء الأزرار وحقن النصوص بـ textContent لحماية الوسوم والأكواد البرمجية من الاختفاء
+        const letterDiv = document.createElement('div');
+        letterDiv.className = 'opt-letter';
+        letterDiv.textContent = label;
+
+        const textSpan = document.createElement('span');
+        textSpan.className = 'opt-text';
+        textSpan.textContent = opt; 
+
+        btn.appendChild(letterDiv);
+        btn.appendChild(textSpan);
 
         btn.addEventListener("click", () => handleAnswer(btn, opt, q));
         elements.optionsContainer.appendChild(btn);
     });
-    }
+}
 
-    function handleAnswer(selectedBtn, selectedOption, q) {
+function handleAnswer(selectedBtn, selectedOption, q) {
     const buttons = elements.optionsContainer.querySelectorAll(".option-btn");
     buttons.forEach((b) => (b.disabled = true));
 
-    // تعديل ذكي: استخدام .trim() لمسح المسافات العشوائية وحل مشكلة اللون الأحمر نهائياً
+    // استخدام .trim() لمسح المسافات العشوائية وحل مشكلة تلوين الإجابة بالأحمر
     const cleanSelected = String(selectedOption).trim();
     const cleanAnswer = String(q.answer).trim();
     const isCorrect = cleanSelected === cleanAnswer;
@@ -226,50 +237,51 @@
         score.wrong++;
 
         buttons.forEach((b) => {
-        const textSpan = b.querySelector(".opt-text");
-        if (textSpan && textSpan.innerText.trim() === cleanAnswer) {
-            b.classList.add("correct");
-        }
+            const textSpan = b.querySelector(".opt-text");
+            // استخدام textContent لمطابقة الفحص بشكل كامل وسليم 100% للأكواد والرموز البرمجية
+            if (textSpan && textSpan.textContent.trim() === cleanAnswer) {
+                b.classList.add("correct");
+            }
         });
 
         const isTF =
-        q.options.length === 2 &&
-        q.options.some(
-            (o) => typeof o === "string" && o.toLowerCase().includes("true"),
-        ) &&
-        q.options.some(
-            (o) => typeof o === "string" && o.toLowerCase().includes("false"),
-        );
+            q.options.length === 2 &&
+            q.options.some(
+                (o) => typeof o === "string" && o.toLowerCase().includes("true"),
+            ) &&
+            q.options.some(
+                (o) => typeof o === "string" && o.toLowerCase().includes("false"),
+            );
 
         const isAnswerFalse =
-        typeof q.answer === "string" && q.answer.toLowerCase().includes("false");
+            typeof q.answer === "string" && q.answer.toLowerCase().includes("false");
 
         if (q.correction && isTF && isAnswerFalse) {
-        elements.correctionText.textContent = q.correction;
-        elements.correctionBox.classList.remove("hidden");
+            elements.correctionText.textContent = q.correction;
+            elements.correctionBox.classList.remove("hidden");
         }
     }
 
     updateStats();
     elements.btnNext.classList.remove("disabled");
-    }
+}
 
-    function updateStats() {
+function updateStats() {
     elements.statRemaining.textContent =
         currentQuestions.length -
         currentQuestionIndex -
         (elements.btnNext.classList.contains("disabled") ? 0 : 1);
     elements.statCorrect.textContent = score.correct;
     elements.statWrong.textContent = score.wrong;
-    }
+}
 
-    function navigateToNext() {
+function navigateToNext() {
     if (!elements.btnNext.classList.contains("disabled")) {
         nextQuestion();
     }
-    }
+}
 
-    function nextQuestion() {
+function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex >= currentQuestions.length) {
         elements.quizProgressBar.style.width = `100%`;
@@ -277,9 +289,9 @@
     } else {
         loadQuestion();
     }
-    }
+}
 
-    function finishQuiz() {
+function finishQuiz() {
     clearInterval(timerInterval);
 
     elements.finalScore.textContent = score.correct;
@@ -293,11 +305,11 @@
     let count = 0;
     const accInterval = setInterval(() => {
         if (count >= acc) {
-        elements.finalAccuracy.textContent = `${acc}%`;
-        clearInterval(accInterval);
+            elements.finalAccuracy.textContent = `${acc}%`;
+            clearInterval(accInterval);
         } else {
-        count += Math.ceil(acc / 20) || 1;
-        elements.finalAccuracy.textContent = `${Math.min(count, acc)}%`;
+            count += Math.ceil(acc / 20) || 1;
+            elements.finalAccuracy.textContent = `${Math.min(count, acc)}%`;
         }
     }, 40);
 
@@ -308,28 +320,28 @@
     elements.totalXpDisplay.textContent = totalUserXP;
 
     switchView("result");
-    }
+}
 
-    // Event Listeners
-    function setupEventListeners() {
+// Event Listeners
+function setupEventListeners() {
     elements.btnNext.addEventListener("click", navigateToNext);
 
     elements.btnBack.addEventListener("click", () => {
         if (confirm("Exit quiz? Progress will be lost.")) {
-        clearInterval(timerInterval);
-        switchView("home");
+            clearInterval(timerInterval);
+            switchView("home");
         }
     });
 
     elements.btnHome.addEventListener("click", () => {
         switchView("home");
     });
-    }
+}
 
-    document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     if (typeof quizData !== "undefined") {
         init();
     } else {
         console.error("quizData is not defined.");
     }
-    });
+});
