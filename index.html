@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DevMaster Quiz Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    
+    <!-- Particles container -->
+    <div id="particles-container"></div>
+
+    <div id="app-container">
+        
+        <!-- Top Navigation (Visible on Home) -->
+        <nav class="top-nav" id="main-nav">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                </div>
+                <span>Dev<span class="gradient-text">Master</span></span>
+            </div>
+            <div class="user-widgets">
+                <div class="widget streak-widget">
+                    <span class="icon">🔥</span>
+                    <span class="value">3</span>
+                </div>
+                <div class="widget xp-widget">
+                    <span class="icon">⚡</span>
+                    <span class="value" id="total-xp">1250</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home View -->
+        <div id="home-view" class="view active">
+            
+            <header class="home-hero glass-panel">
+                <div class="hero-content">
+                    <h1>Ready to Level Up?</h1>
+                    <p>Master Web Development through interactive challenges.</p>
+                </div>
+                <div class="hero-progress">
+                    <div class="progress-ring">
+                        <svg class="ring-svg" width="80" height="80">
+                            <circle class="ring-bg" cx="40" cy="40" r="34"></circle>
+                            <circle class="ring-fill" cx="40" cy="40" r="34" id="main-progress-ring"></circle>
+                        </svg>
+                        <div class="ring-text">
+                            <span id="overall-progress-text">0%</span>
+                        </div>
+                    </div>
+                    <div class="progress-labels">
+                        <span class="label">Completion</span>
+                        <span class="value" id="total-questions-stat">0 Questions Total</span>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="section-title">
+                <h2>Your Modules</h2>
+                <div class="glow-line"></div>
+            </div>
+            
+            <main class="categories-grid" id="categories-container">
+                <!-- Categories will be injected here via JS -->
+            </main>
+        </div>
+
+        <!-- Quiz View -->
+        <div id="quiz-view" class="view">
+            <!-- Sticky Header -->
+            <header class="quiz-header sticky glass-panel">
+                <div class="header-top">
+                    <button id="btn-back" class="icon-btn glass-btn" aria-label="Go back">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <h2 id="quiz-title" class="gradient-text">Chapter Title</h2>
+                    <div class="timer glass-btn" id="timer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span id="timer-text">00:00</span>
+                    </div>
+                </div>
+                
+                <!-- Linear Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="quiz-progress-bar"></div>
+                    </div>
+                </div>
+
+                <!-- Sticky Progress Stats -->
+                <div class="quiz-stats">
+                    <div class="stat-pill">
+                        <div class="dot remaining-dot"></div>
+                        <span id="stat-remaining">0</span> Left
+                    </div>
+                    <div class="stat-pill correct">
+                        <div class="dot correct-dot"></div>
+                        <span id="stat-correct">0</span>
+                    </div>
+                    <div class="stat-pill wrong">
+                        <div class="dot wrong-dot"></div>
+                        <span id="stat-wrong">0</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Quiz Content -->
+            <main class="quiz-content">
+                <div class="flashcard glass-panel" id="flashcard">
+                    <div class="question-header">
+                        <div class="q-badge" id="q-number">Q1</div>
+                    </div>
+                    <p class="question-text" id="q-text">Loading question...</p>
+                    
+                    <div class="options-container" id="options-container">
+                        <!-- Options injected here -->
+                    </div>
+
+                    <div class="correction-box hidden glass-panel" id="correction-box">
+                        <div class="correction-header">
+                            <div class="correction-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            </div>
+                            <span>Explanation</span>
+                        </div>
+                        <p id="correction-text"></p>
+                    </div>
+                </div>
+
+                <div class="quiz-actions">
+                    <button id="btn-next" class="btn action-btn disabled">
+                        Next Question
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Result View -->
+        <div id="result-view" class="view">
+            <div class="result-card glass-panel">
+                <div class="trophy-container">
+                    <div class="glow-effect"></div>
+                    <span class="trophy">🏆</span>
+                </div>
+                <h2 class="gradient-text">Module Complete!</h2>
+                <p class="result-subtitle">Great job pushing your limits.</p>
+                
+                <div class="result-stats-grid">
+                    <div class="r-stat-box">
+                        <span class="r-label">Score</span>
+                        <div class="r-value highlight">
+                            <span id="final-score">0</span>/<span id="final-total" class="sub">0</span>
+                        </div>
+                    </div>
+                    <div class="r-stat-box">
+                        <span class="r-label">Accuracy</span>
+                        <span class="r-value" id="final-accuracy">0%</span>
+                    </div>
+                    <div class="r-stat-box">
+                        <span class="r-label">Time</span>
+                        <span class="r-value" id="final-time">00:00</span>
+                    </div>
+                    <div class="r-stat-box">
+                        <span class="r-label">XP Earned</span>
+                        <span class="r-value xp-color">+<span id="final-xp">0</span></span>
+                    </div>
+                </div>
+                
+                <button id="btn-home" class="btn action-btn large">
+                    Return to Dashboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load data first, then app logic -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body> 
+</html>
